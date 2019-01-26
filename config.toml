@@ -1,4 +1,4 @@
-baseurl = "poteat.github.io"
+baseurl = "mpote.at"
 title = "MP's Projects and Papers"
 languageCode = "en-us"
 paginate = "10" # Number of posts per page

@@ -4,6 +4,8 @@ date: 2019-01-25T16:24:07-05:00
 menu: main
 ---
 
+![](/img/portrait.png)
+
 My name is Michael Poteat and this is my online portfolio and blog, where I can
 broadcast and archive personal projects I work on, and discuss/post things I
 find interesting online.

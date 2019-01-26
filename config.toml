@@ -21,6 +21,7 @@ googleAnalytics = "" # Enable Google Analytics by entering your tracking id
   post_navigation = true
   postSections = ["post"]
   mathjax = true # Enable MathJax
+  customCSS = ["css/custom.css"] # Include custom CSS files
 
 [Params.sidebar]
   home = "right"   # Configure layout for home page

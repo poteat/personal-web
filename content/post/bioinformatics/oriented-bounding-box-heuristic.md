@@ -7,8 +7,8 @@ tags: [javascript, demo, regression]
 
 The 2-dimensional minimum-area oriented bounding box problem is as follows:
 Given a set of coplanar points, how can we efficiently find the smallest
-rectangle which encloses these points? Additionally, that rectangle oriented at
-any angle with respect to the coordinate system.
+rectangle which encloses these points? Additionally, that rectangle can be
+oriented at any angle with respect to the coordinate system.
 
 One interesting estimate for the solution, which guarantees "pretty good"
 results in O(n) time is a natural extension of orthogonal linear regression.

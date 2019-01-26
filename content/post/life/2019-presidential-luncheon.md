@@ -15,4 +15,4 @@ on campus, and suggestions we had (especially with regard to on-campus parking).
 
 Group photo included.
 
-![example](/img/life/2019-presidential-luncheon.png)
+![](/img/life/2019-presidential-luncheon.png)

@@ -1,3 +1,7 @@
 [submodule "themes/mainroad"]
 	path = themes/mainroad
 	url = https://github.com/Vimux/Mainroad
+[submodule "public"]
+	path = public
+	url = https://github.com/poteat/poteat.github.io
+	branch = master

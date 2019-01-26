@@ -1,9 +1,26 @@
 #!/bin/bash
 
-rm -rf poteat.github.io/
-hugo -d poteat.github.io/
+echo -e "\033[0;32mDeploying updates to GitHub...\033[0m"
 
-cd poteat.github.io
-git commit -am "website upload (`date`)"
-git push
+rm -rf public/
+
+# Build the project.
+hugo # if using a theme, replace with `hugo -t <YOURTHEME>`
+
+# Go To Public folder
+cd public
+# Add changes to git.
+git add .
+
+# Commit changes.
+msg="rebuilding site `date`"
+if [ $# -eq 1 ]
+  then msg="$1"
+fi
+git commit -am "$msg"
+
+# Push source and build repos.
+git push origin master
+
+# Come Back up to the Project Root
 cd ..

@@ -6,7 +6,7 @@ menu: main
 
 ![](/img/portrait.png)
 
-My name is Michael Poteat and this is my online portfolio and blog, where I can
+Hey there, I'm Michael Poteat and this is my online portfolio and blog, where I
 broadcast and archive personal projects I work on, and discuss/post things I
 find interesting online.
 

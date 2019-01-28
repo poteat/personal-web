@@ -2,6 +2,7 @@
 title: "About Me"
 date: 2019-01-25T16:24:07-05:00
 menu: main
+authorbox: false
 ---
 
 ![](/img/portrait.png)

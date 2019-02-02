@@ -1,24 +1,26 @@
 #!/bin/bash
 
-echo -e "\033[0;32mDeploying updates to GitHub...\033[0m"
-
-# Build the project.
-hugo -t mainroad # if using a theme, replace with `hugo -t <YOURTHEME>`
-
-# Go To Public folder
-cd public
-# Add changes to git.
-git add .
-
-# Commit changes.
-msg="rebuilding site `date`"
-if [ $# -eq 1 ]
-  then msg="$1"
+if [[ $# -eq 0 ]] ; then
+    echo 'A commit message is required'
+    exit 1
 fi
-git commit -m "$msg"
 
-# Push source and build repos.
+echo -e "\033[0;32mBuilding project...\033[0m"
+
+hugo -t mainroad
+
+echo -e "\033[0;32mDeploying updates to source repo...\033[0m"
+
+git add .
+git commit -m "$1"
 git push origin master
 
-# Come Back up to the Project Root
+echo -e "\033[0;32mDeploying updates to public repo...\033[0m"
+
+cd public
+git add .
+msg="rebuilding site `date`"
+git commit -m "$msg"
+git push origin master
+
 cd ..

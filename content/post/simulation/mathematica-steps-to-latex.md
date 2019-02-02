@@ -1,5 +1,5 @@
 ---
-title: "Mathematica Steps to Latex [Beta]"
+title: "Mathematica Steps to LaTeX [Beta]"
 date: 2019-02-01T15:01:48-05:00
 categories: [simulation]
 tags: [math, mathematica, latex]

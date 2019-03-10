@@ -5,6 +5,8 @@ paginate = "10" # Number of posts per page
 theme = "mainroad"
 disqusShortname = "" # Enable comments by entering your Disqus shortname
 googleAnalytics = "" # Enable Google Analytics by entering your tracking id
+pygmentsCodeFences = true
+pygmentsStyle = "colorful"
 
 [Author]
   name = "Michael Poteat"

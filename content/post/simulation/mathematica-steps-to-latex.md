@@ -1,8 +1,8 @@
 ---
-title: "Mathematica Steps to LaTeX [Beta]"
+title: "Mathematica Steps to LaTeX [WiP]"
 date: 2019-02-01T15:01:48-05:00
 categories: [simulation]
-tags: [math, mathematica, latex]
+tags: [math, mathematica, latex, wip]
 ---
 
 A common problem when using Mathematica to derive expressions is similar to a
@@ -17,7 +17,7 @@ uses is nothing like the manual way humans would find the solution.
 For simple cases, a workaround is passing your problem to the `WolframAlpha[]`
 command in Mathematica as a string, and then choosing to see the steps laid out,
 in the way Wolfram Alpha presupposes a human would do it. This has its own
-problems, namely in the limited complexity of problems WolframAlpha can handle,
+problems, namely in the limited complexity of problems WolframAlpha can handle
 as compared to Mathematica. However, it is enough to get the job done in some
 cases.
 

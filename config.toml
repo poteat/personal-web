@@ -10,12 +10,12 @@ pygmentsStyle = "colorful"
 
 [Author]
   name = "Michael Poteat"
-  bio = "Coder and researcher, doing graduate studies at Old Dominion University. Interested in machine learning, programming, pure mathematics and many other topics."
+  bio = "Coder and researcher, doing graduate studies at Old Dominion University. Does machine learning, programming, pure mathematics and many other topics."
   avatar = "img/avatar.png"
 
 [Params]
   subtitle = "Personal portfolio" # Subtitle of your site
-  description = "Personal portfolio/blog about programming, math, and science." # Description of your site
+  description = "Personal blog about programming, math, and science." # Description of your site
   opengraph = true
   twitter_cards = false
   readmore = true # Show "Read more" button in list if true

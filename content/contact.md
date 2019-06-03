@@ -19,13 +19,13 @@ window.onload = () => {document.getElementById("contact-form").action += f("zr@z
 <input type="hidden" name="_subject" value="Contact submission from mpote.at"/>
     
 <b><label for="email">Your Email</label></b><br>
-<input id="email" type="email" name="_replyto" placeholder="fsmith@example.com"><br><br>
+<input id="email" type="email" name="_replyto" placeholder="jsmith@foobar.com"><br><br>
 
 <b><label for="name">Your Name</label></b><br>
-<input id="name" type="name" name="name" placeholder="Frankie Smith"><br><br>
+<input id="name" type="name" name="name" placeholder="John Smith"><br><br>
 
 <b><label for="message">Message</label></b><br>
-<textarea id="message" name="message" placeholder="I've got an offer you can't refuse..." style="height:200px"></textarea><br><br>
+<textarea id="message" name="message" placeholder="Blah blah blah..." style="height:200px"></textarea><br><br>
 
 <input type="submit" value="Send">
 </form>

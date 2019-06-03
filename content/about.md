@@ -5,13 +5,15 @@ menu: main
 authorbox: false
 ---
 
-![](/img/portrait.png)
+![portrait](/img/portrait.png)
 
 Hey there, I'm Michael Poteat and this is my online portfolio and blog, where I
 broadcast and archive personal projects I work on, and discuss/post things I
 find interesting online.
 
-I work as a graduate research assistant at Old Dominion University. My current
+Working for Volley Inc in San Francisco for Summer 2019.
+
+Graduate student attending Old Dominion University. My
 topic of research is LTL (linear-temporal logic) and its application for
 monitoring and verification of mission correctness in autonomous robotics. As
 well, some future research planned will include utilization of machine learning

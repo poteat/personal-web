@@ -3,7 +3,6 @@ title: "Bay Area SSC Meetup"
 date: 2019-06-03T12:37:10-07:00
 categories: [life]
 tags: [rationality]
-draft: true
 ---
 
 ![dolorespark](https://upload.wikimedia.org/wikipedia/commons/5/51/Dolores_park.jpg)

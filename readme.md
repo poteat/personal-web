@@ -36,8 +36,12 @@ To start up local server on localhost:1313
 hugo server -D
 ```
 
-To deploy to production:
+To build:
 
 ```sh
-./deploy.sh "example commit msg"
+hugo -t mainroad -d poteat.github.io
 ```
+
+Building will apply updates to the poteat.github.io distribution folder, which
+is linked as a submodule to the public distribution repository. So, to deploy,
+all you need to do is commit and push after building.

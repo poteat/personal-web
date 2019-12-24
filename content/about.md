@@ -11,13 +11,10 @@ Hey there, I'm Michael Poteat and this is my online portfolio and blog, where I
 broadcast and archive personal projects I work on, and discuss/post things I
 find interesting online.
 
-Working for Volley Inc in San Francisco for Summer 2019.
+Working in the Bay Area for Volley Inc for the foreseeable future as one of our
+first ten engineers.
 
-Graduate student attending Old Dominion University. My
-topic of research is LTL (linear-temporal logic) and its application for
-monitoring and verification of mission correctness in autonomous robotics. As
-well, some future research planned will include utilization of machine learning
-to produce temporal models that detect adverse operational conditions.
+My graduate topic of research was linear-temporal logic and its applications in verification of mission correctness in autonomous robotics.
 
 My interests include machine learning, pure mathematics, programming,
 programming language design (especially modern languages like NodeJS and Julia),

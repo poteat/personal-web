@@ -7,9 +7,7 @@ authorbox: false
 
 ![portrait](/img/portrait.png)
 
-Hey there, I'm Michael Poteat and this is my online portfolio and blog, where I
-broadcast and archive personal projects I work on, and discuss/post things I
-find interesting online.
+I'm Michael Poteat and this is my online portfolio and blog, where I archive personal projects I work on, and discuss/post things I find interesting online.
 
 Working in the Bay Area for Volley Inc for the foreseeable future as one of our
 first ten engineers.

@@ -7,11 +7,11 @@ tags: [typescript, programming, type system, design patterns]
 
 Typescript's type system is uniquely powerful among mainstream programming languages, approximating the expressive power of Haskell or Idris, while also remaining flexible enough for production applications.
 
-Type predicates are a useful tool in building a well-typed software framework. Essentially, they allow you to "simulate" [dependents types](https://en.wikipedia.org/wiki/Dependent_type), a powerful type feature present in Idris.
+Type predicates are a useful tool in building a well-typed software framework. Essentially, they allow you to "simulate" [dependent types](https://en.wikipedia.org/wiki/Dependent_type), a powerful type feature present in Idris.
 
 Further explanation on type predicates can be found [here](https://www.typescriptlang.org/docs/handbook/advanced-types.html#using-type-predicates).
 
-The premise of this article is a usage of type predicates I haven't seen discussed online, and thus an application I might consider "advanced" or at least somewhat obscure.
+The premise of this article is a usage of type predicates I haven't seen discussed online - most type predicates just modify one of their arguments, but you can actually form a predicate on `this` because it is an implicit argument.
 
 Essentially, in the context of an `interface` or `class`, you may apply a type predicate which applies additional type constraints on `this`.  To motivate the example, I'll invoke the common `Shape` class hierarchy, and try to avoid the corresponding quagmires with the Liskov substitution principle.
 

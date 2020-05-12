@@ -132,7 +132,7 @@ function logShapeData(shape: Shape) {
 }
 ```
 
-In this form, the compiler knows that on line 128, shape is definitely of `Circle` type, because of the type predicate. We have implemented the ability to check, at run-time, whether or not a particular object is of a type we specify.  Additionally, through the use of generics and type predicates, we have extended that check to compile-time as well.
+In this form, the compiler knows that on line 6, shape is definitely of `Circle` type, because of the type predicate. We have implemented the ability to check, at run-time, whether or not a particular object is of a type we specify.  Additionally, through the use of generics and type predicates, we have extended that check to compile-time as well.
 
 ## Final Notes
 

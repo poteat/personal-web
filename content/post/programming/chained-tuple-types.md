@@ -5,7 +5,7 @@ categories: [typescript]
 tags: [typescript, programming, tuples, type system]
 ---
 
-With Typescript 4.0, it's now possible to use variadic tuple types to construct large types with what appears to be runtime code. The general idea is that we will utilize a chaining pattern, where each operation on the chain returns an expanded version of the chain's type.
+With Typescript 4.1, it's now possible to use variadic tuple types to construct large types with what appears to be runtime code. The general idea is that we will utilize a chaining pattern, where each operation on the chain returns an expanded version of the chain's type.
 
 To motivate the example, let us consider a `Set` class. Our `Set` is a chaining class, where you may insert, remove, and check for the existence of numbers. To end the chain, you call `.value()` which returns an array of numbers.
 

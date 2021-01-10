@@ -173,24 +173,16 @@ As well, any given type specification will have multiple possible representation
 
 ## Tuple Existence Checks
 
-For existence check, we need another, similar type-level recursive tuple loop. With some meditation, you may be able to notice the similar structure between `Exists` and `Filter` - they operate on the same principle.
-
-By design, we choose to say that in the case of a generic type `number[]`, any given number may or may not exist - which we represent via returning `boolean` rather than explicitly true or false.
+For existence check, we can utilize `extends` - we convert the tuple to a union and perform an extends check to determine whether or not the given element is present in the tuple.
 
 ```ts
-type Exists<T extends unknown[], N> = T extends []
-  ? false
-  : T extends [infer H, ...infer R]
-  ? H extends N
-    ? true
-    : Exists<R, N>
-  : boolean;
+type Has<T extends unknown[], X> = X extends T[number] ? true : false;
 
 type Ex5_1 = [2, 4, 8];
-type Ex5_1_HasFour = Exists<Ex5_1, 4>; // true
+type Ex5_1_HasFour = Has<Ex5_1, 4>; // true
 
 type Ex5_2 = number[];
-type Ex5_2_HasFour = Exists<Ex5_1, 4>; // boolean
+type Ex5_2_HasFour = Has<Ex5_1, 4>; // boolean
 ```
 
 We now have enough code to finish our type specification of `Set`, complete with a type-safe existence check.
@@ -209,7 +201,7 @@ export type Set<Elements extends number[] = []> = {
 
   has<SpecificValue extends number>(
     x: SpecificValue
-  ): Exists<Elements, SpecificValue>;
+  ): Has<Elements, SpecificValue>;
 
   value(): Elements;
 };

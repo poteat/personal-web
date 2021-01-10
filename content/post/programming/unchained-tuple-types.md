@@ -5,7 +5,7 @@ categories: [typescript]
 tags: [typescript, programming, tuples, type system]
 ---
 
-The `asserts` syntax of the as-yet unreleased Typescript 4.2 allows us to interleave mutative runtime code with type annotations to express type mutations in a powerful way.
+The `asserts` syntax introduced with TS 3.7 allows us to interleave mutative runtime code with type annotations to express type mutations in a powerful way.
 
 This allows us to do away with the chaining syntax as described in my earlier article, **[Chained Tuple Types](https://mpote.at/post/programming/chained-tuple-types/)**, and express our Set mutations in a much more familiar iterative way:
 

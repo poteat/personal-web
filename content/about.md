@@ -5,6 +5,8 @@ menu: main
 authorbox: false
 ---
 
+<img src="/img/cat.gif" alt="cat" style="width:30%;float:right"/>
+
 Working in the Bay Area for Volley Inc for the foreseeable future as one of our
 first ten engineers. I work on core engine development - my prime directive is to do my best every day to support my colleagues.
 

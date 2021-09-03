@@ -15,7 +15,7 @@ pygmentsStyle = "colorful"
 
 [Params]
   subtitle = "Mike's code blog. Come ye all and rejoice!" # Subtitle of your site
-  description = "Personal blog about programming, math, and science." # Description of your site
+  description = "Mike's code blog about programming, math, and science." # Description of your site
   opengraph = true
   twitter_cards = false
   readmore = true # Show "Read more" button in list if true

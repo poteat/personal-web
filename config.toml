@@ -1,5 +1,5 @@
 baseurl = ""
-title = "MP's Projects and Papers"
+title = "Code, lol."
 languageCode = "en-us"
 paginate = "10" # Number of posts per page
 theme = "mainroad"
@@ -14,7 +14,7 @@ pygmentsStyle = "colorful"
   avatar = "img/avatar.png"
 
 [Params]
-  subtitle = "Personal portfolio" # Subtitle of your site
+  subtitle = "Mike's code blog. Come ye all and rejoice!" # Subtitle of your site
   description = "Personal blog about programming, math, and science." # Description of your site
   opengraph = true
   twitter_cards = false

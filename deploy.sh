@@ -4,3 +4,6 @@ cd poteat.github.io
 git pull origin HEAD:master
 git commit . -m "Update website"
 git push origin HEAD:master
+cd ..
+git commit . -m "Update website"
+git push origin HEAD:master

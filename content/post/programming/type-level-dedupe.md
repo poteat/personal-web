@@ -3,6 +3,7 @@ title: "String Deduplication on the Type Level"
 date: 2021-01-09T15:18:24-08:00
 categories: [typescript, algorithms]
 tags: [typescript, programming, tuples, strings, algorithms]
+images: ["img/art/water-on-clouds.png"]
 ---
 
 The string deduplication problem is a canonical one within computer science, serving a similar purpose as fizz-buzz in terms of being an example of a simple problem that a reasonably knowledgable practitioner should be able to solve with minimal effort.

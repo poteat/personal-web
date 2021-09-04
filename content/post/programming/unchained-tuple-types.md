@@ -3,6 +3,7 @@ title: "Unchained Tuple Types"
 date: 2021-01-09T16:33:40-08:00
 categories: [typescript]
 tags: [typescript, programming, tuples, type system]
+images: ["img/art/riding-digital-waves.png"]
 ---
 
 The `asserts` syntax introduced with TS 3.7 allows us to interleave mutative runtime code with type annotations to express type mutations in a powerful way.

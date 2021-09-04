@@ -24,6 +24,10 @@ pygmentsStyle = "colorful"
   postSections = ["post"]
   mathjax = true # Enable MathJax
   customCSS = ["css/custom.css"] # Include custom CSS files
+  images = [
+    "img/art/riding-digital-waves",
+    "digital-dreams-floating-over-the-sea"
+  ]
 
 [Params.sidebar]
   home = "right"   # Configure layout for home page

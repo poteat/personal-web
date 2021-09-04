@@ -25,8 +25,8 @@ pygmentsStyle = "colorful"
   mathjax = true # Enable MathJax
   customCSS = ["css/custom.css"] # Include custom CSS files
   images = [
-    "img/art/riding-digital-waves",
-    "digital-dreams-floating-over-the-sea"
+    "img/art/riding-digital-waves.png",
+    "digital-dreams-floating-over-the-sea.png"
   ]
 
 [Params.sidebar]

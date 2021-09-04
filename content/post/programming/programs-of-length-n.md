@@ -3,7 +3,7 @@ title: "Programs of Length N: Collatz, Chaitin, and Church"
 date: 2021-09-03T15:12:34-07:00
 categories: [programming, mathematics]
 tags: [lambda calculus, programming, math]
-images: ["img/art/the-lambda-calculus"]
+images: ["img/art/the-lambda-calculus.png"]
 ---
 
 There are a few interesting questions about the nature of programs, and specifically about sets of programs, as represented by lambda calculus expressions.

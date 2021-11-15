@@ -5,6 +5,10 @@ categories: [typescript]
 tags: [typescript, programming, safety, type-guard, type system]
 ---
 
+Type guards are a powerful tool for type system design. They are used to express
+that a type is only valid if it satisfies a certain condition. For example, we
+can express that a type is only valid if it is a number or a string.
+
 - [1. Union Type Guards](#1-union-type-guards)
   - [1.1. Naive Union Implementation](#11-naive-union-implementation)
   - [1.2. 2-adic Union Composition](#12-2-adic-union-composition)
@@ -29,10 +33,6 @@ tags: [typescript, programming, safety, type-guard, type system]
   - [7.2. Use-before-define Issue](#72-use-before-define-issue)
   - [7.3 Lazy Generic Is-Object](#73-lazy-generic-is-object)
 - [8. Conclusion](#8-conclusion)
-
-Type guards are a powerful tool for type system design. They are used to express
-that a type is only valid if it satisfies a certain condition. For example, we
-can express that a type is only valid if it is a number or a string.
 
 Here is a naive implementation of a type guard:
 

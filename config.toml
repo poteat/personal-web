@@ -1,5 +1,5 @@
 baseurl = "https://code.lol"
-title = "Code, lol."
+title = "Adventures in Typescript"
 languageCode = "en-us"
 paginate = "10" # Number of posts per page
 theme = "mainroad"
@@ -14,7 +14,7 @@ pygmentsStyle = "colorful"
   avatar = "img/avatar.png"
 
 [Params]
-  subtitle = "Mike's code blog. Come ye all and rejoice!" # Subtitle of your site
+  subtitle = "Mike's code blog." # Subtitle of your site
   description = "Mike's code blog about programming, math, and science." # Description of your site
   opengraph = true
   twitter_cards = false

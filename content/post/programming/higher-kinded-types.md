@@ -13,7 +13,7 @@ This blog post concerns one particular type of HKT - to define the taxonomy, fir
 
 We can classify types in terms of 'order', a rough level of abstraction.
 
-Here are a zero-order types that exist:
+Here are a few zero-order types that exist:
 
 - `number`
 - `string`

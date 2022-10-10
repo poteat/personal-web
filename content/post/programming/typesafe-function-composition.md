@@ -25,7 +25,7 @@ Function composition is an operation that takes two functions, $f$ and $g$, and 
 
 A typed function is a function that takes an input of a certain type and returns an output of a certain type. A type represents a set of values and the operations that can be performed on them.
 
-When $f:: (A{\rightarrow}B)$ and $f:: (B{\rightarrow}C)$ are typed functions, composition preserves the types of the functions, so that if $f$ is a function that takes an input of type $A$ and returns an output of type $B$, and $g$ is a function that takes an input of type $B$ and returns an output of type $C$, then the composed function $h = f \circ g$ will take an input of type $A$ and return an output of type $C$.
+When $f:: (A{\rightarrow}B)$ and $g:: (B{\rightarrow}C)$ are typed functions, composition preserves the types of the functions, so that if $f$ is a function that takes an input of type $A$ and returns an output of type $B$, and $g$ is a function that takes an input of type $B$ and returns an output of type $C$, then the composed function $h = f \circ g$ will take an input of type $A$ and return an output of type $C$.
 
 Incompatible functions may not be composed if they do not have compatible type signatures. For example, if $f:: (A{\rightarrow}B)$ is a function that takes an input of type $A$ and returns an output of type $B$, and $f:: (C{\rightarrow}D)$ is a function that takes an input of type $C$ and returns an output of type $D$, then $f$ and $g$ are incompatible and cannot be composed, unless $C$ is a subtype of $B$.
 
@@ -157,17 +157,25 @@ type Enforce<B, X> = B extends true ? X : never;
 
 type Composable<T extends unknown[]> = Enforce<IsComposable<T>, T>;
 
+type First<T extends unknown[]> = T[0];
+
 type Last<T extends unknown[]> = T extends [...unknown[], infer L] ? L : never;
 
-type ComposableOutput<T extends unknown[]> = OutputOf<Last<T>>;
+type Resolve<T extends unknown> = T;
+
+type ComposedFunction<T extends unknown[]> = Resolve<
+  (x: InputOf<First<T>>) => OutputOf<Last<T>>
+>;
 ```
+
+> The `Resolve` type's purpose is to ensure that the return type of `compose` is ultimately rendered (on hover) as the most resolved possible type.
 
 With these, we can declare `compose` as the following:
 
 ```ts
 declare function compose<T extends unknown[]>(
   ...fx: Composable<T>
-): ComposableOutput<T>;
+): ComposedFunction<T>;
 ```
 
 This technique (called `Enforce`) uses `never` as a "sledgehammer" to force a type error to appear - however, it doesn't result in particularly useful errors for the developer, aside from signalling that _something_ with the types are wrong.

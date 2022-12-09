@@ -1,5 +1,5 @@
 ---
-title: "Type-level Collatz"
+title: "Type-level Collatz Sequence"
 date: 2022-12-08T22:58:35-08:00
 categories: [programming, mathematics]
 tags: [typescript, type-system, number-theory, functional-programming]

@@ -71,3 +71,43 @@ export interface Reify extends Kind.Kind {
 The most likely application of this reification technique is in the context of writing pure functional utilities that possess arbitrary type-level composability.
 
 A large limitation of current functional programming libraries (e.g. [lodash](https://www.npmjs.com/package/lodash), [ramda](https://www.npmjs.com/package/ramda)) is that they are not composable at the type-level. This means that the type-level guarantees of the library are lost when composing functions.
+
+## Fun Example: Collatz Sequence
+
+The following example demonstrates the use of `Kind.Reify` to write a point-free implementation of the [Collatz sequence](https://en.wikipedia.org/wiki/Collatz_conjecture).
+
+This was a fun exercise in writing point-free code, and also in using `Kind.Reify` to represent the type-level guarantees of the original type-level operations.
+
+> [**Try it Out:** Typescript Playground Link](https://www.typescriptlang.org/play?#code/JYWwDg9gTgLgBAbzgEgDRwNLAHYBN0DCEIARjgIYzSER7AzC3kA26AYgK7YDGDt6AOUocoLAR1IBTKHAC+cAGZRicAEQALANYwAtFQjMSk5jFUBYAFCXck7s3JRJcbrQDO8AJIKAXCgA8WHgAdABKksAKAJ40dHzYLEFeAHwA3Na29o7Obp6uAKIAbpLYvsgBOLih4VGCwqLM4lJQiflF2Knpdg5OLtjucAAiwAXANgBCkaXlwWER0XBCMCJiEkbNQyPjkR0WNl1Zvf0ACsBgklOBlbM1mBVBJ2c7e5k9OXAAshwmp8yT-pdVOa1Jb1RprIKfb5gX5PDLdbJ9Tw8RwgYowC53a7zRbLBqraSJZGSVHYGCw-avRFwNjAAAeAGVJABHDjFbjnf6Y6rzIikChUZo0hnM1k8STkl4I-p5FksVwYmbcmK4eiMeLMIIyjhyiXww7wIiI8ikhVXJXUri8NVBQ3uY1ktJWCz6uBEZj2GAALzgAF44F4ABQeVrFACUAY2o0kEwDACZQ+GHpIAwBtSEMaGRAMAZlD6A8RJJMAAugnHZYXW6PZ7GSy2U4-ULa6L2UGFAGtXKAwBGBMB20we09vtVyiesuWCtvRyuL7wP2jr3N+sBgCsAAZQ5YAPTbuD7uAAPQA-Du9weXTO574Uxv0LHV+gAOwANnQ2YAHOhuwBOdCrr84FjP84A-QCABZwPvWNv27d8oLgbsn1QM8DzQ9CMLgVcYKAt9EOzdBwPXe9iMQ0jH0QvCIPvb9iyAA)
+
+```ts
+import {
+  $,
+  Kind,
+  Combinator,
+  Conditional,
+  Function,
+  NaturalNumber,
+} from "hkt-toolbelt";
+
+declare const If: $<Kind.Reify, Conditional.If>;
+declare const IsEven: $<Kind.Reify, NaturalNumber.IsEven>;
+declare const DivideBy: $<Kind.Reify, NaturalNumber.DivideBy>;
+declare const Pipe: $<Kind.Reify, Kind.Pipe>;
+declare const Multiply: $<Kind.Reify, NaturalNumber.Multiply>;
+declare const Increment: $<Kind.Reify, NaturalNumber.Increment>;
+declare const FixSequence: $<Kind.Reify, Combinator.FixSequence>;
+declare const Equals: $<Kind.Reify, Conditional.Equals>;
+declare const Constant: $<Kind.Reify, Function.Constant>;
+
+const Collatz = If(IsEven)(DivideBy(2))(Pipe([Multiply(3), Increment]));
+
+const CollatzSequence = FixSequence(If(Equals(1))(Constant(1))(Collatz));
+
+const result = CollatzSequence(50);
+//    ^?
+//    const result: [50, 25, 76, 38, 19, 58, 29, 88, 44, 22, 11, 34, 17,
+//                   52, 26, 13, 40, 20, 10, 5, 16, 8, 4, 2, 1]
+```
+
+> To get this to work with `FixSequence`, I had to solve an obscure issue with 'reductive' types that I don't yet completely understand. As a brief mention, when doing tail-optimized generic recursion, all of the associated parameters must be conditionally reduced to `never` on a halt condition. Otherwise, the compiler will try to 'greedily' evaluate the type, and will fail to terminate.

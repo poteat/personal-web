@@ -1,5 +1,5 @@
 baseurl = "https://code.lol"
-title = "Adventures in Typescript"
+title = "Codeless Code"
 languageCode = "en-us"
 paginate = "10" # Number of posts per page
 theme = "mainroad"
@@ -9,13 +9,13 @@ pygmentsCodeFences = true
 pygmentsStyle = "colorful"
 
 [Author]
-  name = "Michael Poteat"
-  bio = "Software engineer and researcher in SF. Interests in machine learning, programming, pure mathematics and many other topics."
+  name = "Alice Poteat"
+  bio = "software engineer and flawed human being"
   avatar = "img/avatar.png"
 
 [Params]
-  subtitle = "Mike's code blog." # Subtitle of your site
-  description = "Mike's code blog about programming, math, and science." # Description of your site
+  subtitle = "Blog of Alice Poteat" # Subtitle of your site
+  description = "Alice's personal blog about programming, math, and science." # Description of your site
   opengraph = true
   twitter_cards = false
   readmore = true # Show "Read more" button in list if true

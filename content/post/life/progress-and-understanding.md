@@ -29,15 +29,19 @@ The divine, the transcendent, the higher truth.
 
 # My Path
 
-$ \boxed{\Phi \Gamma \Psi \rightarrow \emptyset \rightarrow \Phi} $
+$$
+ \boxed{\Phi \Gamma \Psi \rightarrow \emptyset \rightarrow \Phi}
+$$
 
-$ \left\{
+$$
+ \left\{
 \begin{array}{l}
 \text{1. } \Gamma \text{ in body of } \Psi \\
 \text{2. } \Phi*\nabla \text{ in body of } \Psi \\
 \text{3. } \Phi*\nabla \text{ in body of } \Gamma \\
 \text{4. } \Phi\_\nabla \text{ in body of } \Phi \\
 \end{array}
-\right. $
+\right.
+$$
 
-$ \Phi\_\nabla \overset{\infty}{\rightsquigarrow} \Phi $
+$$ \Phi\_\nabla \overset{\infty}{\rightsquigarrow} \Phi $$

@@ -1,5 +1,5 @@
 ---
-title: "Stub: Variational Selector Text Stenography"
+title: "Variational Selector Text Stenography"
 date: 2025-08-23T13:58:16-07:00
 categories: [programming]
 tags: [programming, cybersecurity, ai]

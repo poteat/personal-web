@@ -8,11 +8,6 @@ googleAnalytics = "" # Enable Google Analytics by entering your tracking id
 pygmentsCodeFences = true
 pygmentsStyle = "colorful"
 
-[Author]
-  name = "Alice Poteat"
-  bio = "software engineer and flawed human being"
-  avatar = "img/avatar.png"
-
 [Params]
   subtitle = "Blog of Alice Poteat" # Subtitle of your site
   description = "Alice's personal blog about programming, math, and science." # Description of your site
@@ -28,6 +23,11 @@ pygmentsStyle = "colorful"
     "img/art/riding-digital-waves.png",
     "digital-dreams-floating-over-the-sea.png"
   ]
+
+[Params.author]
+  name = "Alice Poteat"
+  bio = "software engineer and flawed human being"
+  avatar = "img/avatar.png"
 
 [Params.sidebar]
   home = "right"   # Configure layout for home page

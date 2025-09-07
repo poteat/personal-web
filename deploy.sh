@@ -51,6 +51,13 @@ git commit -m "$commit_msg"
 echo "🚢 Pushing to GitHub..."
 git push origin master
 
+# Go back to main repo and commit changes
+cd ..
+echo ""
+echo "📝 Committing changes to source repository..."
+git add -A
+git commit -m "$commit_msg" 2>/dev/null || echo "No changes to commit in source repo"
+
 echo ""
 echo "✨ Deployment complete!"
 echo "🌐 Your site will be live at https://code.lol in a few minutes"

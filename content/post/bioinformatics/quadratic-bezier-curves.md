@@ -5,6 +5,10 @@ categories: [bioinformatics]
 tags: [javascript, demo, curves]
 ---
 
+An interactive visualization of quadratic Bézier curves, demonstrating how three control points define smooth parametric curves commonly used in computer graphics and design.
+
+<!--more-->
+
 Quadratic Bézier curves are explicit parametric functions of the following form:
 
 <div>

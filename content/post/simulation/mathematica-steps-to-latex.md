@@ -5,6 +5,10 @@ categories: [simulation]
 tags: [math, mathematica, latex, wip]
 ---
 
+Exploring methods to extract human-readable step-by-step solutions from Mathematica's symbolic computation, addressing the black-box problem in automated mathematical derivation.
+
+<!--more-->
+
 A common problem when using Mathematica to derive expressions is similar to a
 big problem plaguing machine learning algorithms today: It is difficult or
 impossible to explain the result due to the internal complexity of the black-box

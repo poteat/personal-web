@@ -6,6 +6,10 @@ tags: [typescript, programming, tuples, type system]
 images: ["img/art/riding-digital-waves.png"]
 ---
 
+Using TypeScript's `asserts` syntax to create imperative-style type mutations, moving beyond method chaining to more familiar iterative patterns for complex type operations.
+
+<!--more-->
+
 The `asserts` syntax introduced with TS 3.7 allows us to interleave mutative runtime code with type annotations to express type mutations in a powerful way.
 
 This allows us to do away with the chaining syntax as described in my earlier article, **[Chained Tuple Types](https://mpote.at/post/programming/chained-tuple-types/)**, and express our Set mutations in a much more familiar iterative way:

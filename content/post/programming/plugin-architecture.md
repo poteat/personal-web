@@ -5,107 +5,110 @@ categories: [programming]
 tags: [typescript, extensibility, type-system, architecture]
 ---
 
+Designing a type-safe plugin system in TypeScript that maintains strong typing guarantees while allowing extensible functionality.
+
+<!--more-->
+
 ```ts
 declare abstract class EnginePlugin<I = unknown, D = unknown> {
-  createInterface?(ø: Record<string, unknown>): I
-  getDependencies?(): D
+  createInterface?(ø: Record<string, unknown>): I;
+  getDependencies?(): D;
 }
 
-type Defined<T> = T extends undefined ? never : T
+type Defined<T> = T extends undefined ? never : T;
 
-type ExtractPlugins<T> = T extends Engine<infer PX> ? PX : never
+type ExtractPlugins<T> = T extends Engine<infer PX> ? PX : never;
 
 type UnionToIntersection<U> = (
   U extends unknown ? (k: U) => void : never
 ) extends (k: infer I) => void
   ? I
-  : never
+  : never;
 
 type MergeInterfaces<
   E extends Engine,
-  K extends keyof EnginePlugin,
-> = UnionToIntersection<ReturnType<Defined<ExtractPlugins<E>[number][K]>>>
+  K extends keyof EnginePlugin
+> = UnionToIntersection<ReturnType<Defined<ExtractPlugins<E>[number][K]>>>;
 
-type Assume<T, U> = T extends U ? T : never
+type Assume<T, U> = T extends U ? T : never;
 
 type GetDependencies<P extends EnginePlugin> = Assume<
   P extends EnginePlugin<unknown, infer D> ? D : never,
   EnginePlugin[]
->
+>;
 
 type PluginDependencyErrorMessage =
-  `Plugin is missing one or more dependencies.`
+  `Plugin is missing one or more dependencies.`;
 
 type EnforceDependencies<
   E extends Engine,
-  P extends EnginePlugin,
+  P extends EnginePlugin
 > = GetDependencies<P>[number] extends ExtractPlugins<E>[number]
   ? P
-  : PluginDependencyErrorMessage
+  : PluginDependencyErrorMessage;
 
 declare class Engine<PX extends EnginePlugin[] = []> {
   registerPlugin<P extends EnginePlugin>(
-    plugin: EnforceDependencies<this, P>,
-  ): asserts this is Engine<[...PX, P]>
+    plugin: EnforceDependencies<this, P>
+  ): asserts this is Engine<[...PX, P]>;
 
-  createInterface(): MergeInterfaces<this, "createInterface">
+  createInterface(): MergeInterfaces<this, "createInterface">;
 }
 
 interface DogInterface {
-  bark(): void
+  bark(): void;
 }
 
 declare const DogPlugin: {
   new (): {
-    createInterface(ø: Record<string, unknown>): DogInterface
-  }
-  (ø: unknown): ø is DogInterface
-}
+    createInterface(ø: Record<string, unknown>): DogInterface;
+  };
+  (ø: unknown): ø is DogInterface;
+};
 
 interface CatInterface {
-  meow(message: string): void
+  meow(message: string): void;
 }
 
 declare const CatPlugin: {
   new (): {
-    super(): typeof CatPlugin
-    createInterface(ø: Record<string, unknown>): CatInterface
-  }
-  (ø: unknown): ø is CatInterface
-}
+    super(): typeof CatPlugin;
+    createInterface(ø: Record<string, unknown>): CatInterface;
+  };
+  (ø: unknown): ø is CatInterface;
+};
 
 interface PantherInterface {
   panther: {
-    roar(): void
-  }
+    roar(): void;
+  };
 }
 
 declare const PantherPlugin: {
   new (): {
-    createInterface(ø: Record<string, unknown>): PantherInterface
-  }
-  getDependencies(): [typeof CatPlugin]
-  (ø: unknown): ø is PantherInterface
-}
+    createInterface(ø: Record<string, unknown>): PantherInterface;
+  };
+  getDependencies(): [typeof CatPlugin];
+  (ø: unknown): ø is PantherInterface;
+};
 
-declare const engine: Engine
+declare const engine: Engine;
 
-engine.registerPlugin(new DogPlugin())
-engine.registerPlugin(new CatPlugin())
-engine.registerPlugin(new PantherPlugin())
+engine.registerPlugin(new DogPlugin());
+engine.registerPlugin(new CatPlugin());
+engine.registerPlugin(new PantherPlugin());
 
-const ø = engine.createInterface()
+const ø = engine.createInterface();
 
-ø.bark()
-ø.meow("hello")
-ø.panther.roar()
+ø.bark();
+ø.meow("hello");
+ø.panther.roar();
 
-ø.meow("meow")
+ø.meow("meow");
 
 if (DogPlugin(ø)) {
-  ø.bark()
+  ø.bark();
 }
-
 ```
 
 # Towards a well-typed plugin architecture
@@ -139,8 +142,8 @@ serve as the base class for all plugins that we develop.
 
 ```typescript
 abstract class EnginePlugin<I = unknown, D = unknown> {
-  createInterface?(ø: Record<string, unknown>): I
-  getDependencies?(): D
+  createInterface?(ø: Record<string, unknown>): I;
+  getDependencies?(): D;
 }
 ```
 
@@ -168,15 +171,15 @@ some concrete plugins. Let's start by developing a plugin that provides a
 
 ```typescript
 interface DogInterface {
-  bark(): void
+  bark(): void;
 }
 
 const DogPlugin: {
   new (): {
-    createInterface(ø: Record<string, unknown>): DogInterface
-  }
-  (ø: unknown): ø is DogInterface
-}
+    createInterface(ø: Record<string, unknown>): DogInterface;
+  };
+  (ø: unknown): ø is DogInterface;
+};
 ```
 
 Our `DogPlugin` is a simple JavaScript object that contains two properties.
@@ -188,9 +191,9 @@ Now that we have developed our plugin, we can use it to create an instance of
 the `DogInterface`.
 
 ```typescript
-const dog = new DogPlugin().createInterface()
+const dog = new DogPlugin().createInterface();
 
-dog.bark() // "woof!"
+dog.bark(); // "woof!"
 ```
 
 ## Managing plugin dependencies
@@ -201,15 +204,15 @@ plugin that depends on the first. Let's develop a plugin that provides a
 
 ```typescript
 interface CatInterface {
-  meow(message: string): void
+  meow(message: string): void;
 }
 
 const CatPlugin: {
   new (): {
-    createInterface(ø: Record<string, unknown>): CatInterface
-  }
-  (ø: unknown): ø is CatInterface
-}
+    createInterface(ø: Record<string, unknown>): CatInterface;
+  };
+  (ø: unknown): ø is CatInterface;
+};
 ```
 
 Our `CatPlugin` is very similar to our `DogPlugin`. It is a simple JavaScript
@@ -220,9 +223,9 @@ Now that we have developed our `CatPlugin`, we can use it to create an instance
 of the `CatInterface`.
 
 ```typescript
-const cat = new CatPlugin().createInterface()
+const cat = new CatPlugin().createInterface();
 
-cat.meow("meow!") // "meow!"
+cat.meow("meow!"); // "meow!"
 ```
 
 Now let's develop a third plugin that depends on `CatPlugin`. This plugin will provide
@@ -231,17 +234,17 @@ an interface for a panther.
 ```typescript
 interface PantherInterface {
   panther: {
-    roar(): void
-  }
+    roar(): void;
+  };
 }
 
 const PantherPlugin: {
   new (): {
-    createInterface(ø: Record<string, unknown>): PantherInterface
-  }
-  getDependencies(): [typeof CatPlugin]
-  (ø: unknown): ø is PantherInterface
-}
+    createInterface(ø: Record<string, unknown>): PantherInterface;
+  };
+  getDependencies(): [typeof CatPlugin];
+  (ø: unknown): ø is PantherInterface;
+};
 ```
 
 Our `PantherPlugin` is similar to our other plugins, but it introduces a new
@@ -257,9 +260,9 @@ Now that we have developed our `PantherPlugin`, we can use it to create an
 instance of the `PantherInterface`.
 
 ```typescript
-const panther = new PantherPlugin().createInterface()
+const panther = new PantherPlugin().createInterface();
 
-panther.panther.roar() // "roar!"
+panther.panther.roar(); // "roar!"
 ```
 
 ## Defining an `Engine` class
@@ -270,10 +273,10 @@ application. We will do this by defining an `Engine` class.
 ```typescript
 declare class Engine<PX extends EnginePlugin[] = []> {
   registerPlugin<P extends EnginePlugin>(
-    plugin: EnforceDependencies<this, P>,
-  ): asserts this is Engine<[...PX, P]>
+    plugin: EnforceDependencies<this, P>
+  ): asserts this is Engine<[...PX, P]>;
 
-  createInterface(): MergeInterfaces<this, "createInterface">
+  createInterface(): MergeInterfaces<this, "createInterface">;
 }
 ```
 
@@ -290,11 +293,11 @@ Now that we have defined our `Engine` class, we can use it to load our
 plugins.
 
 ```typescript
-const engine = new Engine()
+const engine = new Engine();
 
-engine.registerPlugin(new DogPlugin())
-engine.registerPlugin(new CatPlugin())
-engine.registerPlugin(new PantherPlugin())
+engine.registerPlugin(new DogPlugin());
+engine.registerPlugin(new CatPlugin());
+engine.registerPlugin(new PantherPlugin());
 ```
 
 ## Accessing functionality from the `Engine`
@@ -303,11 +306,11 @@ Now that we have loaded our plugins into the `Engine`, we can use the
 `Engine` to access the functionality that they provide.
 
 ```typescript
-const ø = engine.createInterface()
+const ø = engine.createInterface();
 
-ø.bark()
-ø.meow("hello")
-ø.panther.roar()
+ø.bark();
+ø.meow("hello");
+ø.panther.roar();
 ```
 
 ## Conclusion
@@ -330,7 +333,7 @@ The `ExtractPlugins` utility type is used to extract the set of plugins from
 an `Engine` instance.
 
 ```typescript
-type ExtractPlugins<T> = T extends Engine<infer PX> ? PX : never
+type ExtractPlugins<T> = T extends Engine<infer PX> ? PX : never;
 ```
 
 ## `UnionToIntersection`
@@ -343,7 +346,7 @@ type UnionToIntersection<U> = (
   U extends unknown ? (k: U) => void : never
 ) extends (k: infer I) => void
   ? I
-  : never
+  : never;
 ```
 
 ## `MergeInterfaces`
@@ -354,8 +357,8 @@ plugins.
 ```typescript
 type MergeInterfaces<
   E extends Engine,
-  K extends keyof EnginePlugin,
-> = UnionToIntersection<ReturnType<Defined<ExtractPlugins<E>[number][K]>>>
+  K extends keyof EnginePlugin
+> = UnionToIntersection<ReturnType<Defined<ExtractPlugins<E>[number][K]>>>;
 ```
 
 ## `Defined`
@@ -363,7 +366,7 @@ type MergeInterfaces<
 The `Defined` utility type is used to remove `undefined` from a type.
 
 ```typescript
-type Defined<T> = T extends undefined ? never : T
+type Defined<T> = T extends undefined ? never : T;
 ```
 
 ## `GetDependencies`
@@ -375,7 +378,7 @@ plugin.
 type GetDependencies<P extends EnginePlugin> = Assume<
   P extends EnginePlugin<unknown, infer D> ? D : never,
   EnginePlugin[]
->
+>;
 ```
 
 ## `EnforceDependencies`
@@ -386,10 +389,10 @@ dependencies are satisfied.
 ```typescript
 type EnforceDependencies<
   E extends Engine,
-  P extends EnginePlugin,
+  P extends EnginePlugin
 > = GetDependencies<P>[number] extends ExtractPlugins<E>[number]
   ? P
-  : PluginDependencyErrorMessage
+  : PluginDependencyErrorMessage;
 ```
 
 ## `PluginDependencyErrorMessage`
@@ -399,5 +402,5 @@ message when a plugin's dependencies are not satisfied.
 
 ```typescript
 type PluginDependencyErrorMessage =
-  `Plugin is missing one or more dependencies.`
+  `Plugin is missing one or more dependencies.`;
 ```

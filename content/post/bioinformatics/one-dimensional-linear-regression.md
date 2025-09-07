@@ -5,6 +5,10 @@ categories: [bioinformatics]
 tags: [javascript, demo, regression]
 ---
 
+An interactive demonstration of simple linear regression, showing how the least-squares method finds the best-fitting line through a set of data points by minimizing vertical distances.
+
+<!--more-->
+
 The simple linear regression algorithm is a closed-form solution to a
 least-squared distance minimization problem. Here is demonstrated the
 one-dimensional case of simple linear regression.

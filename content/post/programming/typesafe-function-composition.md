@@ -5,7 +5,9 @@ categories: [programming]
 tags: [type safety, typescript, functional programming, type-system]
 ---
 
-> Do ya wanna know how to type function composition in Typescript? Read on!
+> Do ya wanna know how to well-type function composition in Typescript? Read on!
+
+<!--more-->
 
 - [1. Background](#1-background)
   - [1.1. Type-theoretic Pseudocode](#11-type-theoretic-pseudocode)

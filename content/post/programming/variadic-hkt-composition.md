@@ -6,6 +6,10 @@ tags: [typescript, programming, type-system]
 images: ["img/art/angel.png"]
 ---
 
+Extending Higher Kinded Types with variadic composition patterns, enabling clean functional composition while preserving complete type information.
+
+<!--more-->
+
 In a previous article, [Higher Kinded Types in Typescript](../../programming/higher-kinded-types/), we explored how to encode HKTs, as well as some of their applications.
 
 For example, we could define a value and type-level operation like the following:

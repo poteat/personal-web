@@ -5,6 +5,10 @@ categories: [programming]
 tags: [typescript, programming, type-system]
 ---
 
+A comprehensive introduction to Higher Kinded Types in TypeScript, exploring how to encode and utilize these powerful abstractions from functional programming.
+
+<!--more-->
+
 HKTs are a powerful abstraction. Just as there are different types of higher-order functions, so are there so-called 'higher-kinded types'.
 
 ## Taxonomy

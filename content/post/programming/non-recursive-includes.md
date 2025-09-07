@@ -5,18 +5,24 @@ categories: [programming]
 tags: [typescript, performance, type-system, efficiency]
 ---
 
-```ts
-type E1<X> = <T>() => T extends X ? 0 : 1
-type E2<X> = <T>() => T extends X ? 0 : 1
+A performance-optimized, non-recursive implementation of a type-level array inclusion operator in TypeScript.
 
-type IsEqual<X, Y> = E1<X> extends E2<Y> ? true : false
+<!--more-->
+
+```ts
+type E1<X> = <T>() => T extends X ? 0 : 1;
+type E2<X> = <T>() => T extends X ? 0 : 1;
+
+type IsEqual<X, Y> = E1<X> extends E2<Y> ? true : false;
 
 /**
  * Whether or not T includes U as an element.
  */
 type Includes<T extends readonly unknown[], U> = true extends {
-  [key in keyof T]: IsEqual<T[key], U>
-}[number] ? true : false
+  [key in keyof T]: IsEqual<T[key], U>;
+}[number]
+  ? true
+  : false;
 ```
 
 # A non-recursive type-level `Includes` operator in Typescript
@@ -39,15 +45,15 @@ type IsEqual<X, Y> = E1<X> extends E2<Y> ? true : false
 
 where `E1` and `E2` are helper functions that take a type `T` and return `0` if `T` is equal to `X`, and `1` otherwise.
 
-Thus, `IsEqual<X, Y>` returns `true` if `E1<X>` is equal to `E2<Y>`, and `false` otherwise. 
+Thus, `IsEqual<X, Y>` returns `true` if `E1<X>` is equal to `E2<Y>`, and `false` otherwise.
 
 #### E1 and E2
 
 The `E1` and `E2` functions are implemented as follows:
 
 ```ts
-type E1<X> = <T>() => T extends X ? 0 : 1
-type E2<X> = <T>() => T extends X ? 0 : 1
+type E1<X> = <T>() => T extends X ? 0 : 1;
+type E2<X> = <T>() => T extends X ? 0 : 1;
 ```
 
 These functions take a type `T` and return `0` if `T` is equal to `X`, and `1` otherwise. These functions exploit deep behavior around generics to implement a "true type-level equality check", which will even distinguish readonly attributes from non-readonly attributes.
@@ -60,8 +66,10 @@ The `Includes` function is implemented as follows:
 
 ```ts
 type Includes<T extends readonly unknown[], U> = true extends {
-  [key in keyof T]: IsEqual<T[key], U>
-}[number] ? true : false
+  [key in keyof T]: IsEqual<T[key], U>;
+}[number]
+  ? true
+  : false;
 ```
 
 First, note that `Includes` takes two type parameters: `T`, which is a _readonly_ array type, and `U`, which is the element type that we want to check for inclusion in `T`. We do not introduce a constraint whereby U must be an element of T, since the whole purpose of the function is to determine whether or not U is an element of T.

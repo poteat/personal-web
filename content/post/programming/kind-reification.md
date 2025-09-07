@@ -9,6 +9,8 @@ The `hkt-toolbelt` now provides a way to 'reify' a higher-order type into a conc
 
 > to **reify:** make (something abstract) more concrete or real.
 
+<!--more-->
+
 ## Basics of Higher-Order Types
 
 For the purposes of `hkt-toolbelt`, a higher-order type is merely a representation of a type _mapping_, i.e. an 'applicable' type that maps from an input type to an output type.

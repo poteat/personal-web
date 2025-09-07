@@ -5,6 +5,10 @@ categories: [simulation]
 tags: [javascript, demo, physics]
 ---
 
+A JavaScript particle physics simulation using a quadtree spatial data structure to efficiently compute inter-particle forces, optimizing from O(n²) to near-linear complexity.
+
+<!--more-->
+
 A small particle simulation was written in JS, utilizing a simplified (constant
 depth) quadtree structure. The model includes forces between nearby particles,
 so rather than invoke a O(n^2) operation to compute the net force for each

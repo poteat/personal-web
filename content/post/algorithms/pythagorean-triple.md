@@ -5,6 +5,10 @@ categories: [algorithms]
 tags: [math, number theory, factorization]
 ---
 
+We explore a solution to finding Pythagorean triples with a product constraint, achieving O(√n) time complexity by reducing the problem to the well-known 3SUM problem.
+
+<!--more-->
+
 The Pythagorean triple problem is as follows. Given an input integer \\(n\\),
 return integers \\(a\\), \\(b\\), \\(c\\) such that the two following conditions
 hold:
@@ -27,10 +31,10 @@ simple `O(sqrt(n))` time algorithm that generates all divisors of \\(n\\):
 // @require n >= 1
 export const divisors = (n: number) => {
   const d = _.times(Math.sqrt(n) - 1)
-    .map(i => i + 1)
-    .filter(i => n % i === 0);
+    .map((i) => i + 1)
+    .filter((i) => n % i === 0);
 
-  return _.uniq(d.concat([...d].reverse().map(i => n / i)));
+  return _.uniq(d.concat([...d].reverse().map((i) => n / i)));
 };
 ```
 
@@ -100,17 +104,17 @@ Pollard's Rho algorithm, at the cost of sacrificing simplicity.
 // Runs in O(sqrt(n)) time.
 // @require n >= 1
 export const pythagoreanTriplet = (n: number) => {
-  let d = divisors(n).map(x => x ** 2);
+  let d = divisors(n).map((x) => x ** 2);
   d = [...d]
     .reverse()
-    .map(x => -x)
+    .map((x) => -x)
     .concat(d);
 
   // O(log(n)^2)
   const p = sum3(d)
-    .filter(x => _.countBy(x, y => y < 0).true === 1)
-    .map(x => x.map(y => Math.sqrt(Math.abs(y))).sort((a, b) => a - b))
-    .filter(x => x.reduce((a, y) => a * y) === n);
+    .filter((x) => _.countBy(x, (y) => y < 0).true === 1)
+    .map((x) => x.map((y) => Math.sqrt(Math.abs(y))).sort((a, b) => a - b))
+    .filter((x) => x.reduce((a, y) => a * y) === n);
 
   return p.length > 0 ? p[0] : [];
 };

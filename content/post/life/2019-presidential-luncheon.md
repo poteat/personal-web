@@ -5,6 +5,10 @@ categories: [life]
 tags: [tau-beta-pi]
 ---
 
+A memorable meeting with ODU's president as part of a Tau Beta Pi engineering honor society event.
+
+<!--more-->
+
 This last Wednesday I had the honor of attending a luncheon with ODU's current
 president [John R. Broderick](https://en.wikipedia.org/wiki/John_R._Broderick).
 This event was a meetup with the local Tau Beta Pi engineering honor society

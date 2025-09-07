@@ -6,6 +6,10 @@ tags: [typescript, programming, tuples, strings, algorithms]
 images: ["img/art/water-on-clouds.png"]
 ---
 
+Solving the classic string deduplication algorithm entirely within TypeScript's type system using literal string types and recursive type manipulation.
+
+<!--more-->
+
 The string deduplication problem is a canonical one within computer science, serving a similar purpose as fizz-buzz in terms of being an example of a simple problem that a reasonably knowledgable practitioner should be able to solve with minimal effort.
 
 The problem appears in a few variants, but briefly one such variant is to remove duplicate letters in a given string, such that the string then has only one instance of any given letter.
@@ -23,7 +27,7 @@ type Split<S extends string> = S extends ""
   ? [C, ...Split<R>]
   : never;
 
-type Result = Split<"Foobar"> // :: ["F", "o", "o", "b", "a", "r"]
+type Result = Split<"Foobar">; // :: ["F", "o", "o", "b", "a", "r"]
 ```
 
 `Split` is defined essentially as a nested conditional type (using the ternary syntax), that recurses into itself to define the tuple type. The `C` type is inferred to be the first character of `S`, and the `R` type is inferred to be the rest. (corresponding to `Character` and `Rest` respectively).

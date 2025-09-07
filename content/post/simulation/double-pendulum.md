@@ -5,6 +5,10 @@ categories: [simulation]
 tags: [javascript, demo, physics]
 ---
 
+An interactive JavaScript simulation demonstrating the chaotic behavior of a double pendulum system, showcasing how small changes in initial conditions lead to dramatically different outcomes.
+
+<!--more-->
+
 This is a simulation of 2 bobs, connected by massless, perfectly rigid rods to a
 central pivot under the force of uniform gravity. In addition to being the
 motivating example for chaotic systems (in addition to the Lorenz system, its

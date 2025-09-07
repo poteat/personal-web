@@ -5,6 +5,10 @@ categories: [typescript]
 tags: [typescript, programming, type system]
 ---
 
+Exploring how to enforce type constraints across function maps in TypeScript, where every function must accept a specific parameter type.
+
+<!--more-->
+
 Some "easy to state" problems in Typescript can require somewhat sophisticated type constructs.
 
 Let's say you want to enforce that every function in a particular map takes in as its first parameter, either a number or a string:

@@ -5,6 +5,10 @@ categories: [typescript]
 tags: [typescript, programming, safety, type-guard, type system]
 ---
 
+Building composable type guard systems in TypeScript, covering union type guards, record validation, and variadic composition patterns for enhanced type safety.
+
+<!--more-->
+
 Type guards are a powerful tool for type system design. They are used to express
 that a type is only valid if it satisfies a certain condition. For example, we
 can express that a type is only valid if it is a number or a string.

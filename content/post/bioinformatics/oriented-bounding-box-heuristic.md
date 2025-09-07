@@ -5,6 +5,10 @@ categories: [bioinformatics]
 tags: [javascript, demo, regression]
 ---
 
+A fast O(n) heuristic for finding near-optimal oriented bounding boxes around point sets, using orthogonal linear regression to align rectangles with the natural orientation of the data.
+
+<!--more-->
+
 The 2-dimensional minimum-area oriented bounding box problem is as follows:
 Given a set of coplanar points, how can we efficiently find the smallest
 rectangle which encloses these points? Additionally, that rectangle can be

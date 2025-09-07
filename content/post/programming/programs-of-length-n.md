@@ -6,6 +6,10 @@ tags: [lambda calculus, programming, math]
 images: ["img/art/the-lambda-calculus.png"]
 ---
 
+Exploring fundamental questions about program complexity, convergence, and the nature of computation through the lens of lambda calculus and algorithmic information theory.
+
+<!--more-->
+
 There are a few interesting questions about the nature of programs, and specifically about sets of programs, as represented by lambda calculus expressions.
 
 - [1. How many programs have N terms?](#1-how-many-programs-have-n-terms)

@@ -5,6 +5,10 @@ categories: [programming]
 tags: [typescript, programming, type-system, point-free]
 ---
 
+Implementing point-free (tacit) programming patterns in TypeScript using Higher Kinded Types to overcome traditional type system limitations.
+
+<!--more-->
+
 In Typescript, point-free programming has been traditionally limited due to the difficulty the type system has representing the abstracted types associated with point-free (also called 'tacit') programming.
 
 - [1. What is Tacit Programming?](#1-what-is-tacit-programming)
@@ -317,7 +321,7 @@ type MapInstanceOf<T> = {
   [key in keyof T]: InstanceOf<T[key]>;
 };
 
-const flow = <HKTs extends typeof HKT[]>(...hkts: HKTs) =>
+const flow = <HKTs extends (typeof HKT)[]>(...hkts: HKTs) =>
   build(
     class extends HKT {
       new = (x: this["_1"]) =>

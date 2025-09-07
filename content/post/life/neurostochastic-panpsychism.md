@@ -4,7 +4,7 @@ date: 2023-01-28T12:41:58-08:00
 categories: [life]
 tags: [philosophy, life, intelligence, consciousness]
 draft: true
-_build:
+build:
   list: never
 ---
 

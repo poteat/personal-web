@@ -5,7 +5,7 @@ categories: [typescript]
 tags: [typescript, programming, safety, type-guard, type system]
 ---
 
-Building composable type guard systems in TypeScript, covering union type guards, record validation, and variadic composition patterns for enhanced type safety.
+Building composable type guard systems in TypeScript where runtime validation seamlessly integrates with compile-time type narrowing. Type guards like `isString(x): x is string` enable safe runtime checks, but composing them requires careful design. This explores combinators for union guards `or(isNumber, isString): x is number | string`, intersection guards `and(hasName, hasAge): x is Person`, and variadic patterns that preserve type inference. The result: elegant runtime validation that TypeScript's control flow fully understands.
 
 <!--more-->
 

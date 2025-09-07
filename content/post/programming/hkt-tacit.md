@@ -5,7 +5,7 @@ categories: [programming]
 tags: [typescript, programming, type-system, point-free]
 ---
 
-Implementing point-free (tacit) programming patterns in TypeScript using Higher Kinded Types to overcome traditional type system limitations.
+Implementing point-free (tacit) programming patterns in TypeScript using Higher Kinded Types to overcome traditional type system limitations. Point-free style eliminates explicit arguments, composing functions like `pipe(map(inc), filter(isEven), reduce(add))` instead of `x => x.map(inc).filter(isEven).reduce(add)`. Through HKT encodings, we achieve true tacit programming where type inference flows through the entire pipeline, enabling cleaner functional abstractions without sacrificing TypeScript's type safety.
 
 <!--more-->
 

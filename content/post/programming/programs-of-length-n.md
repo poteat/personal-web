@@ -6,7 +6,7 @@ tags: [lambda calculus, programming, math]
 images: ["img/art/the-lambda-calculus.png"]
 ---
 
-Exploring fundamental questions about program complexity, convergence, and the nature of computation through the lens of lambda calculus and algorithmic information theory.
+How many lambda calculus programs exist with exactly $N$ terms? This exploration dives into deep questions about computational complexity, from counting programs like `(λx. x x) (λx. x x)` to analyzing the non-computable `BB(N)` busy beaver function that grows faster than any computable sequence. We examine Chaitin's constant $Ω$ and why determining program convergence connects to unsolved problems like the Collatz conjecture `collatz(3n + 1)`.
 
 <!--more-->
 

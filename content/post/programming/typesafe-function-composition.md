@@ -5,7 +5,7 @@ categories: [programming]
 tags: [type safety, typescript, functional programming, type-system]
 ---
 
-> Do ya wanna know how to well-type function composition in Typescript? Read on!
+This deep dive explores implementing mathematically-correct function composition with full type safety. We'll build a `compose` function where `compose<A, B, C>(f: B→C, g: A→B): A→C` validates type compatibility at compile time, handle variadic arguments through recursive types, and ensure composed pipelines like `compose(toString, Math.sqrt, parseInt)` automatically infer as `(s: string) => string` while preventing invalid compositions from compiling.
 
 <!--more-->
 

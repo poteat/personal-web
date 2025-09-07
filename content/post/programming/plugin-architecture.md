@@ -5,7 +5,7 @@ categories: [programming]
 tags: [typescript, extensibility, type-system, architecture]
 ---
 
-Designing a type-safe plugin system in TypeScript that maintains strong typing guarantees while allowing extensible functionality.
+Designing a type-safe plugin system in TypeScript that maintains strong typing guarantees while allowing extensible functionality. Using discriminated unions and generic constraints, we can build plugin architectures where `registerPlugin<T extends Plugin>()` enforces interface contracts at compile time. This approach enables dynamic feature extension while preserving full IDE support and preventing runtime type errors - useful for maintaining large-scale extensible applications.
 
 <!--more-->
 

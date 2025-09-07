@@ -5,7 +5,7 @@ categories: [programming]
 tags: [typescript, programming, type-system, point-free]
 ---
 
-The `hkt-toolbelt` now provides a way to 'reify' a higher-order type into a concrete function type. This is useful for representation of point-free code.
+The `hkt-toolbelt` library introduces kind reification - transforming abstract type-level functions into concrete runtime signatures. This enables point-free programming where compositions like `Pipe<[Map<Inc>, Filter<IsEven>, Reduce<Add>]>` become executable functions with 1:1 corresponding types. By bridging TypeScript's type system with runtime code, we can write type-level pipelines that are both type-safe and actually invokable.
 
 > to **reify:** make (something abstract) more concrete or real.
 

@@ -5,7 +5,7 @@ categories: [typescript]
 tags: [typescript, programming, type system, design patterns]
 ---
 
-Exploring an advanced TypeScript pattern where type predicates can modify their own containing object's type, enabling powerful dependent-type-like behavior.
+TypeScript's type predicates can modify the type of `this` itself, enabling self-modifying type behavior that approaches dependent types. By implementing `is<K extends keyof ShapeTypes>(type: K): this is ShapeTypes[K]` on abstract classes, we achieve compile-time type narrowing where `shape.is('circle')` transforms the `shape` variable's type from `Shape` to `Circle`, unlocking properties like `shape.radius` within conditional blocks.
 
 <!--more-->
 

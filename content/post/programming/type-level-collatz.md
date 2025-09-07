@@ -5,7 +5,7 @@ categories: [programming, mathematics]
 tags: [typescript, type-system, number-theory, functional-programming]
 ---
 
-Implementing the famous Collatz conjecture entirely within TypeScript's type system, demonstrating type-level arithmetic and recursive computation.
+Implementing the famous Collatz conjecture entirely within TypeScript's type system, demonstrating type-level arithmetic and recursive computation. The sequence follows $n \rightarrow n/2$ if even, $n \rightarrow 3n+1$ if odd, conjecturing all positive integers reach 1. Using template literal types and conditional type recursion, we can compute `Collatz<27>` yielding the 111-step sequence purely at compile time - pushing TypeScript's type system to perform actual mathematical computation.
 
 <!--more-->
 

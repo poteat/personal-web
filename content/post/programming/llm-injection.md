@@ -5,7 +5,7 @@ categories: [programming]
 tags: [programming, cybersecurity, ai]
 ---
 
-This interactive tool converts selected text directly into invisible variation selectors (U+E0100+).
+This interactive tool demonstrates a steganographic technique using Unicode variation selectors (`U+E0100`-`U+E017F`) to encode hidden text within visible strings. By mapping ASCII characters to these invisible codepoints, messages can be embedded undetected - a potential vector for prompt injection attacks where LLMs may process hidden instructions.
 
 <!--more-->
 

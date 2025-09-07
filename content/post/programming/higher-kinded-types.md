@@ -5,7 +5,7 @@ categories: [programming]
 tags: [typescript, programming, type-system]
 ---
 
-A comprehensive introduction to Higher Kinded Types in TypeScript, exploring how to encode and utilize these powerful abstractions from functional programming.
+A comprehensive introduction to Higher Kinded Types in TypeScript, exploring how to encode and utilize these powerful abstractions from functional programming. HKTs enable type constructors that take other type constructors as arguments - imagine `Functor<F>` that works for any `F<T>` whether it's `Array<T>`, `Promise<T>`, or `Option<T>`. Through encoding techniques using interface augmentation and symbol keys, we can simulate HKTs in TypeScript, making possible advanced functional patterns like monadic composition and type-safe algebraic structures previously impossible in the language.
 
 <!--more-->
 

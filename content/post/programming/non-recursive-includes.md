@@ -5,7 +5,7 @@ categories: [programming]
 tags: [typescript, performance, type-system, efficiency]
 ---
 
-A performance-optimized, non-recursive implementation of a type-level array inclusion operator in TypeScript.
+A performance-optimized, non-recursive implementation of a type-level array inclusion operator in TypeScript. By leveraging tuple spread syntax and conditional types instead of recursive patterns, we achieve `Includes<[1, 2, 3], 2>` evaluation in O(1) type instantiation depth rather than O(n). This technique improves compile-time performance for large tuple operations, avoiding TypeScript's recursion depth limits while maintaining the same type-level guarantees.
 
 <!--more-->
 

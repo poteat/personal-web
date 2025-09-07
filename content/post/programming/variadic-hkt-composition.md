@@ -6,7 +6,7 @@ tags: [typescript, programming, type-system]
 images: ["img/art/angel.png"]
 ---
 
-Extending Higher Kinded Types with variadic composition patterns, enabling clean functional composition while preserving complete type information.
+Extending Higher Kinded Types with variadic composition patterns, enabling clean functional composition while preserving complete type information. Building on HKT foundations, this explores variadic compositions where `Compose<[F, G, H, ...]>` handles arbitrary function chains with full type inference. Using advanced tuple manipulation and distributive conditional types, we achieve compositions like `pipe(map, flatten, filter, reduce)` that maintain type safety across any number of transformations - a significant advancement in TypeScript's functional programming capabilities.
 
 <!--more-->
 

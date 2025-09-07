@@ -1,6 +1,6 @@
 [submodule "themes/mainroad"]
 	path = themes/mainroad
-	url = https://github.com/Vimux/Mainroad
+	url = https://github.com/poteat/mainroad-theme
 [submodule "public"]
 	path = public
 	url = git@github.com:poteat/poteat.github.io

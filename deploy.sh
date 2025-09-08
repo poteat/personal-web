@@ -10,36 +10,7 @@ if [ ! -d "poteat.github.io/.git" ]; then
     exit 1
 fi
 
-# Build the site
-echo "🔨 Building site with Hugo..."
-hugo -d poteat.github.io
-
-# Check for changes
-cd poteat.github.io
-if [ -z "$(git status --porcelain)" ]; then 
-    echo "✅ No changes to deploy"
-    exit 0
-fi
-
-# Show changes
-echo ""
-echo "📝 Changes to be deployed:"
-git status --short
-echo ""
-
-# Prompt for confirmation
-read -p "Do you want to deploy these changes? (y/n) " -n 1 -r
-echo
-if [[ ! $REPLY =~ ^[Yy]$ ]]; then
-    echo "❌ Deployment cancelled"
-    exit 1
-fi
-
-# Commit and push
-echo "📤 Committing changes..."
-git add -A
-
-# Get commit message from parameter or prompt
+# Get commit message from parameter or prompt first
 if [ -n "$1" ]; then
     # Use all parameters as the commit message
     commit_msg="$*"
@@ -52,13 +23,34 @@ else
     fi
 fi
 
-git commit -m "$commit_msg"
+# Build the site
+echo "🔨 Building site with Hugo..."
+hugo -d poteat.github.io
 
-echo "🚢 Pushing to GitHub..."
-git push origin master
+# Check for deployment changes
+cd poteat.github.io
+if [ -z "$(git status --porcelain)" ]; then 
+    echo "✅ No changes to deploy to GitHub Pages"
+    cd ..
+else
 
-# Go back to main repo and commit changes
-cd ..
+    # Show changes
+    echo ""
+    echo "📝 Changes to be deployed:"
+    git status --short
+    echo ""
+
+    # Commit and push deployment
+    echo "📤 Committing deployment changes..."
+    git add -A
+    git commit -m "$commit_msg"
+
+    echo "🚢 Pushing to GitHub Pages..."
+    git push origin master
+
+    # Go back to main repo
+    cd ..
+fi
 echo ""
 echo "📝 Committing changes to source repository..."
 git add -A

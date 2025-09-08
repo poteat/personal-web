@@ -39,11 +39,17 @@ fi
 echo "📤 Committing changes..."
 git add -A
 
-# Get commit message
-echo ""
-read -p "Enter commit message (or press enter for default): " commit_msg
-if [ -z "$commit_msg" ]; then
-    commit_msg="Update site $(date +'%Y-%m-%d %H:%M')"
+# Get commit message from parameter or prompt
+if [ -n "$1" ]; then
+    # Use all parameters as the commit message
+    commit_msg="$*"
+    echo "📝 Using commit message: $commit_msg"
+else
+    echo ""
+    read -p "Enter commit message (or press enter for default): " commit_msg
+    if [ -z "$commit_msg" ]; then
+        commit_msg="Update site $(date +'%Y-%m-%d %H:%M')"
+    fi
 fi
 
 git commit -m "$commit_msg"

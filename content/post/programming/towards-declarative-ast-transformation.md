@@ -13,7 +13,10 @@ which I haven't yet been able to find.
 
 <!--more-->
 
-The basic structure of these codemods follows a pattern matching approach:
+The basic structure of these codemods follows a pattern matching approach, a
+matcher against an AST
+([abstract syntax tree](https://en.wikipedia.org/wiki/Abstract_syntax_tree)),
+i.e. a parsed representation of code into a tree structure.
 
 <details>
 <summary>Show codemod template</summary>
@@ -189,7 +192,7 @@ a few core flaws in this representation:
 
 The concept of unification - at least how I'm using it - refers to the idea of
 using equivalent semantics between the matched structure and the structure-
-builder to replace with. There are some tools which do a limited\* form of this
+builder to replace with. There are some tools which do a limited form of this
 via pattern codes (e.g. Comby, ast-grep). My umbrage is two-fold:
 
 - these tools also don't allow type-semantic analysis.
@@ -198,8 +201,8 @@ via pattern codes (e.g. Comby, ast-grep). My umbrage is two-fold:
 
 So, I think there's space for a tool that uses direct-ish AST pattern matching
 _embedded_ in TypeScript, that also supports type-level semantics. It would use
-the same semantics for matching as it does replacing, based on a pattern-
-matching, declarative philosophy.
+the same semantics for matching as it does replacing, based on a
+pattern-matching, declarative philosophy.
 
 For the above rule, it would look something like this:
 

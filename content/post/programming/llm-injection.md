@@ -15,8 +15,9 @@ This interactive tool demonstrates a steganographic technique using Unicode vari
     <button id="convertBtn" style="padding: 5px 10px; margin-left: 10px;">Convert Selected</button>
   </div>
   
-  <div style="margin-bottom: 15px;">
+  <div style="margin-bottom: 15px; position: relative;">
     <textarea id="textOutput" readonly style="width: 400px; height: 100px; padding: 5px; font-family: monospace;"></textarea>
+    <div id="charCount" style="position: absolute; bottom: 5px; right: 10px; font-size: 12px; color: #666; background: white; padding: 2px 5px;">0 bytes</div>
   </div>
   
   <button id="copyBtn" style="padding: 5px 10px;">Copy Output</button>
@@ -30,6 +31,17 @@ document.addEventListener('DOMContentLoaded', function() {
   const textOutput = document.getElementById('textOutput');
   const copyBtn = document.getElementById('copyBtn');
   const copyStatus = document.getElementById('copyStatus');
+  const charCount = document.getElementById('charCount');
+  
+  function getByteLength(str) {
+    // Convert string to UTF-8 bytes and count them
+    return new Blob([str]).size;
+  }
+  
+  function updateCharCount() {
+    const bytes = getByteLength(textOutput.value);
+    charCount.textContent = `${bytes} byte${bytes !== 1 ? 's' : ''}`;
+  }
   
   convertBtn.addEventListener('click', function() {
     const input = textInput.value;
@@ -37,6 +49,7 @@ document.addEventListener('DOMContentLoaded', function() {
     const selectionEnd = textInput.selectionEnd;
     
     let result = '';
+    let hiddenCount = 0;
     
     if (selectionStart !== selectionEnd) {
       // Process with selection: keep unselected parts, convert selected part
@@ -64,6 +77,7 @@ document.addEventListener('DOMContentLoaded', function() {
         if (charCode >= 0x20 && charCode <= 0x7E) {
           result += String.fromCodePoint(0xE0100 + charCode);
           internal += String.fromCodePoint(0xE0100 + charCode);
+          hiddenCount++;
         }
       }
       
@@ -78,20 +92,30 @@ document.addEventListener('DOMContentLoaded', function() {
         const charCode = input.charCodeAt(i);
         if (charCode >= 0x20 && charCode <= 0x7E) {
           result += String.fromCodePoint(0xE0100 + charCode);
+          hiddenCount++;
         }
       }
     }
     
     textOutput.value = result;
+    updateCharCount();
+    
+    // Add note about hidden characters if applicable
+    if (hiddenCount > 0) {
+      const hiddenBytes = hiddenCount * 4; // Each variation selector is 4 bytes in UTF-8
+      charCount.textContent += ` (${hiddenBytes} hidden)`;
+    }
   });
   
   copyBtn.addEventListener('click', function() {
     textOutput.select();
+    const bytes = getByteLength(textOutput.value);
     navigator.clipboard.writeText(textOutput.value).then(function() {
+      copyStatus.textContent = `${bytes} byte${bytes !== 1 ? 's' : ''} copied!`;
       copyStatus.style.display = 'inline';
       setTimeout(function() {
         copyStatus.style.display = 'none';
-      }, 2000);
+      }, 3000);
     });
   });
 });

@@ -67,7 +67,8 @@ export default transform;
 </details>
 
 As a more concrete example, let's take the simple case of a if-else condition
-whose consequent and alternate are both immediate returns:
+whose consequent (truthy branch) and alternate (falsey branch) are both
+immediate returns:
 
 ```ts
 function renderPetName(pet) {

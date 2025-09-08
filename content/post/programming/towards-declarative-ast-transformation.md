@@ -276,7 +276,8 @@ names can be type-level captured such that downstream usage is known.
 A core piece of this is a "context data-flow" using this $ concept. In the
 initial step, $ gets populated with matched fragments. I will elide this for
 now; instead, I want to explicate the `.with` builder that is a core piece of
-this design.
+this design - essentially, it merges the output of each `with` expression with
+the current 'context' or 'scope' value internal to the chain.
 
 ```ts
 // { port: 3000, host: "localhost", ...url, isSecure: false }
@@ -289,7 +290,7 @@ const result = scope({ port: 3000 })
 
 This isn't used in the parser above, but it's a core piece - the ability to
 type-safely 'merge' / 'overwrite' keys into a shared context which then
-eventually gets used.
+eventually gets used. It's very nearly identical to lodash _thru_.
 
 I have a small demonstration of the type-level semantics for the data-flow
 pattern here:

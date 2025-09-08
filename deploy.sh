@@ -56,7 +56,12 @@ cd ..
 echo ""
 echo "📝 Committing changes to source repository..."
 git add -A
-git commit -m "$commit_msg" 2>/dev/null || echo "No changes to commit in source repo"
+if git commit -m "$commit_msg" 2>/dev/null; then
+    echo "🚢 Pushing source repository..."
+    git push origin master
+else
+    echo "No changes to commit in source repo"
+fi
 
 echo ""
 echo "✨ Deployment complete!"

@@ -17,6 +17,7 @@ pygmentsStyle = "colorful"
   authorbox = true
   post_navigation = true
   postSections = ["post"]
+  post_meta = ["date"] # Show date in post listings
   mathjax = true # Enable MathJax
   customCSS = ["css/custom.css"] # Include custom CSS files
   images = [

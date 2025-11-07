@@ -3,6 +3,10 @@ title: "React + Jotai as a Modern MVC Architecture"
 date: 2025-11-05T18:30:44-08:00
 categories: [programming]
 tags: [programming, frontend, architecture]
+_build:
+  list: never
+  render: always
+  publishResources: true
 ---
 
 React is a library for building user interfaces in a declarative style. Jotai is

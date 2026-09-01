@@ -19,7 +19,7 @@ pygmentsStyle = "colorful"
   postSections = ["post"]
   post_meta = ["date"] # Show date in post listings
   mathjax = true # Enable MathJax
-  customCSS = ["css/custom.css"] # Include custom CSS files
+  customCSS = ["css/custom.css", "css/papers.css"] # Include custom CSS files
   images = [
     "img/art/riding-digital-waves.png",
     "digital-dreams-floating-over-the-sea.png"

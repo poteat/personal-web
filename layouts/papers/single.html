@@ -1,0 +1,39 @@
+{{ define "main" }}
+{{- $pages := .Resources.Match "page-*.svg" -}}
+{{- $pdf := .Resources.GetMatch "*.pdf" -}}
+{{- $hasText := gt (len .Content) 0 -}}
+<main class="main" role="main">
+	<article class="post paper">
+		<header class="post__header paper__header">
+			<p class="paper__crumb"><a href="{{ .Parent.RelPermalink }}">← papers</a></p>
+			<h1 class="post__title">{{ .Title }}</h1>
+			<p class="paper__authors">{{ delimit .Params.authors ", " " and " }}</p>
+			{{ with .Params.affiliation }}<p class="paper__affil">{{ . }}</p>{{ end }}
+			<p class="paper__cite">{{ .Params.citation }}</p>
+			<p class="paper__links">
+				{{- $links := slice -}}
+				{{- with .Params.doi }}{{ $links = $links | append (printf `<a href="https://doi.org/%s">doi:%s</a>` . .) }}{{ end -}}
+				{{- with .Params.pmcid }}{{ $links = $links | append (printf `<a href="https://pmc.ncbi.nlm.nih.gov/articles/%s/">%s</a>` . .) }}{{ end -}}
+				{{- with $pdf }}{{ $links = $links | append (printf `<a href="%s">PDF</a>` .RelPermalink) }}{{ end -}}
+				{{ delimit $links " · " | safeHTML }}
+			</p>
+			{{ with .Params.source_note }}<p class="paper__note">{{ . }} Author name updated.</p>{{ end }}
+			{{ with .Params.paper_keywords }}<p class="paper__keywords"><strong>Keywords:</strong> {{ . }}</p>{{ end }}
+		</header>
+		{{- if and $pages $hasText }}
+		<div class="paper-tabs">
+			<input type="radio" name="paper-view" id="view-pages" checked>
+			<label for="view-pages">As published</label>
+			<input type="radio" name="paper-view" id="view-text">
+			<label for="view-text">Web text</label>
+			<div class="paper-view paper-view--pages">{{ partial "papers/pages.html" (dict "pages" $pages) }}</div>
+			<div class="paper-view paper-view--text content post__content paper__content clearfix">{{ .Content }}</div>
+		</div>
+		{{- else if $pages }}
+		{{ partial "papers/pages.html" (dict "pages" $pages) }}
+		{{- else }}
+		<div class="content post__content paper__content clearfix">{{ .Content }}</div>
+		{{- end }}
+	</article>
+</main>
+{{ end }}

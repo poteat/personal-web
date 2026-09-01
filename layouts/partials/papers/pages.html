@@ -1,0 +1,5 @@
+<div class="paper-pages">
+{{- range $i, $p := sort .pages "Name" }}
+	<figure class="paper-page"><img src="{{ $p.RelPermalink }}" alt="Page {{ add $i 1 }}" loading="{{ if lt $i 2 }}eager{{ else }}lazy{{ end }}" width="612" height="792"></figure>
+{{- end }}
+</div>

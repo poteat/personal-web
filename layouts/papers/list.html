@@ -1,0 +1,21 @@
+{{ define "main" }}
+<main class="main list" role="main">
+	<header class="main__header">
+		<h1 class="main__title">{{ .Title }}</h1>
+	</header>
+	{{- with .Content }}
+	<div class="content main__content clearfix">
+		{{ . }}
+	</div>
+	{{- end }}
+	<ol class="paper-list">
+	{{- range .Pages.ByDate.Reverse }}
+		<li class="paper-list__item">
+			<a class="paper-list__title" href="{{ .RelPermalink }}">{{ .Title }}</a>
+			<div class="paper-list__authors">{{ delimit .Params.authors ", " " and " }}</div>
+			<div class="paper-list__cite">{{ .Params.citation }}{{ with .Params.doi }} · <a href="https://doi.org/{{ . }}">doi:{{ . }}</a>{{ end }}</div>
+		</li>
+	{{- end }}
+	</ol>
+</main>
+{{ end }}

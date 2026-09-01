@@ -1,0 +1,15 @@
+<h3>Reference</h3>
+
+Chen, L., He, J. "A distance and orientation dependent energy function of amino acid key blocks", Biopolymers (accepted Nov. 1), 2013.
+<br>Chen, L., He, J. "A distance and orientation dependent potential energy function with cluster energy" <span style = "font-style:italic">The Proceeding of the 2011 IEEE International Conference on Bioinformatics and Biomedicine Workshops</span>, p405-9, Nov 12-15, 2011.</br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>

@@ -1,0 +1,88 @@
+<html>
+<head>
+<script type = "text/javascript">
+$(document).ready(function(){
+
+$("#publish1").click(function(){
+$("#show1").slideToggle("slow");
+});
+
+$("#publish2").click(function(){
+$("#show2").slideToggle("slow");
+});
+
+$("#publish3").click(function(){
+$("#show3").slideToggle("slow");
+});
+
+$("#publish4").click(function(){
+$("#show4").slideToggle("slow");
+});
+}); 
+</script>
+</head>
+
+<body>
+
+<h3>Research Projects</h3>
+
+<img src = "./images/group.jpg" style = "position: relative; margin-left: 200px; margin-right: 200px; margin-bottom: 10px; width: 300px; height: 225px; box-shadow: 8px 8px 5px #888888; border-radius: 8px;">
+
+<div style = "line-height: 150%; -moz-column-count:2; -webkit-column-count:2; column-count:2; -moz-column-gap:40px; -webkit-column-gap:40px; column-gap:40px; -moz-column-rule:3px outset #E3E4FA;
+-webkit-column-rule:3px outset ; column-rule:3px outset #E3E4FA;">
+<h5>Secondary structure elements detection from volumetric data<br><span id = "publish1" style = "text-decoration: underline;">(Selected published papers)</span></h5>
+<div id = "show1" style = "font-style: italic; margin: 20px auto; border-width: 1px 3px 3px 1px; border-color: #736F6E #5E5A80 #5E5A80 #736F6E;display:none; border-style: solid; border-style: solid;box-shadow: 2px 2px 3px #888888; border-radius:20px;">
+<ul>
+<li>Si, D., He, J. "Tracing beta strands using StrandTwister from cryo-EM density maps at medium resolutions", <span style = "font-style:italic;">Structure, </span> 22(11):1665-76, 2014.</li>
+<li>Al Nasr, K., Liu, C., Rwebangira, M., Burge, L., He, J. "Intensity-Based Skeletonization of CryoEM Grayscale Images Using a True Segmentation-Free Algorithm", IEEE Transactions on Computational Biology and Bioinformatics, Sep 26, 2013.</li>
+<li>Si, D., He, J. "Beta-sheet Detection and Representation from Medium Resolution Cryo-EM Density Maps", Proceeding of ACM Conference on Bioinformatics Computational Biology and Biomedicine Workshops, Washington, D.C., September 22-25, 2013.</li>
+<li>Si, D., Ki, S., Al Nasr, K., He, J. "A Machine Learning Approach for the Identification of Protein Secondary Structure Elements from cryoEM Density Maps", Biopolymers, 97(9):698-708, 2012</li>
+<li>Dal Palu, A., Pontelli, E., He, J., Lu, Y. "Identification of a-helices from Low Resolution Protein Density Map" Proceedings of Computational Systems Bioinformatics (CSB) 2006, p89-98, Stanford University, Aug. 2006.</li>
+</ul>
+</div>
+<p>The output data from the electron cryo-microscopy can be represented as a density map of the protein structures. A density map is a volumetric map in which each voxel is associated with a density value. At the medium resolution such as 5-10&Aring;, protein secondary structures appear to have characteristic shapes. Although it has been shown that &alpha;-helices and &beta;-sheets can be detected from the 3-dimensional volumetric data at this resolution, it is challenging to detect them accurately. Our work aims at the computational development for accurate detection of the secondary structures.</p>
+
+<h5>Potential energy functions<br><span id = "publish2" style = "text-decoration: underline;">(Selected published papers)</span></h5>
+<div id = "show2" style = "font-style: italic; margin: 20px auto; border-width: 1px 3px 3px 1px; border-color: #736F6E #5E5A80 #5E5A80 #736F6E;display:none; border-style: solid; border-style: solid;box-shadow: 2px 2px 3px #888888; border-radius:20px;">
+<ul>
+<li>Chen, L., He, J. "A distance and orientation-dependent energy function of amino acid key blocks", <span style = "font-style:italic;">Biopolymers, </span> 101(6), 681-92, 2014.</li>
+<li>Sun, W., He, J. "Native Secondary Structure Topology has Near Minimum Contact Energy among All Possible Geometrically Constrained Topologies", Proteins: Structure, Function, and Bioinformatics, Vol 77, (1): 159-73, 2009.</li>
+</ul>
+</div>
+<p>The possible protein conformations that satisfy the constraints in the cryoEM data should be ultimately evaluated by the energies of the conformation. Statistical potential energy functions have been shown effective in distinguishing the native-like protein conformations. This work aims to develop the potential energy functions that work at the various stages during the construction of the protein chains. We have developed a distance-dependent Multi-well function and a more refined function CEAKB. The CEAKB function is a distance and orientation dependent statistical energy function using the key blocks of the amino acids.</p>
+<h5>Topology graph & Constrained Shortest Path<br><span id = "publish3" style = "text-decoration: underline;">(Selected published papers)</span></h5>
+<div id = "show3" style = "font-style: italic; margin: 20px auto; border-width: 1px 3px 3px 1px; border-color: #736F6E #5E5A80 #5E5A80 #736F6E;display:none; border-style: solid; border-style: solid;box-shadow: 2px 2px 3px #888888; border-radius:20px;">
+<ul>
+<li> Biswas, A., Ranjan, D., Zubair, M., Zeil, S., Al Nasr, K., He, J. "An Effective Computational Method Incorporating Multiple Secondary Structure Predictions in Topology Determination for Cryo-EM Images", <span style = "font-style:italic;">IEEE Transaction of Comp. Biol. Bioinfo. </span>,  DOI 10.1109/TCBB.2016.2543721, 2016.</li>
+<li> Biswas, A., Ranjan, D., Zubair, M., He, J. "A dynamic programming algorithm for finding the optimal placement of a secondary structure topology in cryo-EM data", <span style = "font-style:italic;">Journal of Computational Biology,</span>  (9): 837-43, 2015.</li>
+<li> Al Nasr, K., Ranjan, D., Zubair, M., Chen, L., He, J. "Solving the secondary structure matching problem in de novo modeling using a constrained K-shortest path graph algorithm", <span style = "font-style:italic;">IEEE Transactions on Computational Biology and Bioinformatics </span> 11(2), 419-29, 2014.</li>
+
+<li>Biswas, A., Si, D., Al Nasr, K., Ranjan, D., Zubair, M., He, J. "Improved
+efficiency in cryo-EM secondary structure topology determination from
+inaccurate data", J. Bioinform Comput Biol</span>, 10(3): 1242006, 2012.</li>
+<li>Al Nasr, K., Ranjan, D., Zubair, M., He, J. "Ranking valid topologies of the secondary structure elements using a constraint graph", Journal of Bioinformatics and Computational Biology, Vol 9(3), 415-30, 2011.</li>
+<li>Sun, W., He, J. "Native Secondary Structure Topology has Near Minimum Contact Energy among All Possible Geometrically Constrained Topologies", <span style = "font-style:italic;">Proteins: Structure, Function, and Bioinformatics</span>, Vol 77, (1): 159-73, 2009.</li>
+<li>Lu, Y., He, J., Strauss, C. E. M. "Deriving Topology and Sequence Alignment for the Helix Skeleton in Low Resolution Protein Density Maps" <span style = "font-style:italic;">Journal of Bioinformatics and Computational Biology</span>, Vol 6 (1), p183-201, 2008.</li>
+<li>He, J., Lu, Y., Pontelli, E. "A Parallel Algorithm for Helices Mapping between 3D and 1D Protein Structure using the Length Constraints of Helices" <span style = "font-style:italic;">Lecture Notes in Computer Science Vol 3358 p746-56, Proceedings of the Second International Symposium on Parallel and Distributed Processing and Applications</span>, Hong Kong, China, 2004.</li>
+</ul>
+</div>
+<p>The major challenge in predicting the structure from the cryoEM maps is that it is not known which segment of the protein sequence corresponds to which of the secondary structure elements (SSEs) detected from the density map. A topology of the SSEs refers to the order of the SSEs with respect to the protein sequence and the direction of each SSE. We translated the topology problem into a constrained graph problem. We gave a dynamic programming method to find the top-k shortest paths that satisfy the constraints.</p>
+
+<h5>Protein structure simulation using the constraints of the cryoEM data<br><span id = "publish4" style = "text-decoration: underline;">(Selected published papers)</span></h5>
+<div id = "show4" style = "font-style: italic; margin: 20px auto; border-width: 1px 3px 3px 1px; border-color: #736F6E #5E5A80 #5E5A80 #736F6E;display:none; border-style: solid; border-style: solid;box-shadow: 2px 2px 3px #888888; border-radius:20px;">
+<ul>
+<li>Al Nasr, K., He, J. "Constrained Cyclic Coordinate Descent - Beyond the Protein Loop Closure Problem", <span style = "font-style:italic;">Robotica,</span>,  (accepted), 2016.</li>
+<li>Al Nasr, K., Chen, L., Si, D., Ranjan, D., Zubair, M., He, J. "Building
+the Initial Chain of the Proteins through De Novo Modeling of the
+Cryo-Electron Microscopy Volume Data at the Medium Resolutions", ACM
+Conference on Bioinformatics, Computational Biology and Biomedicine,
+Orlando, FL, Oct 7-10, 2012.</li>
+<li>Al Nasr, K, Sun, W., He, J. "Structure prediction for the helical skeletons detected from the low resolution protein density map" BMC Bioinformatics, Vol 11, suppl 1:s44, 2010.</li>
+<li>Lu, Y., Strauss, C. E. M., He, J. "Incorporation of Constraints from Low Resolution Density Map in Ab Initio Structure Prediction Using Rosetta", <span style = "font-style:italic;">Proceeding of 2007 IEEE international Conference on Bioinformatics and Biomedicine Workshops</span>, p67-73, San Jose, 2007.</li>
+</ul>
+</div>
+<p>The goal of this work is to construct the energetically favorable protein chains that satisfy the constraints extracted from the cryoEM data. This approach provides a general method that does not require the availability of a template structure in the Protein Data Bank. It is still challenging to obtain a template structure from the Protein Data Bank for a general protein. The protein chains are constructed and sampled for the possible topologies of the secondary structure elements. The low-energy conformations are selected through simulations.</p>
+</div>
+
+</body>
+</html>

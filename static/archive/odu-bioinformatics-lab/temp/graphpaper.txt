@@ -1,0 +1,20 @@
+<h3>Reference</h3>
+
+Al Nasr, K., Ranjan, D., Zubair, M., Chen, L., He, J. "Solving the secondary structure matching problem in de novo modeling using a constrained K-shortest path graph algorithm", IEEE Transactions on Computational Biology and Bioinformatics (under revision), 2013.
+
+<br>
+Biswas, A., Si, D., Al Nasr, K., Ranjan, D., Zubair, M., He, J. "Improved efficiency in cryo-EM secondary structure topology determination from inaccurate data" <span style = "font-style:italic;">J. Bioinform Comput Biol</span>, 10(3): 1242006, 2012.
+
+<br>
+
+Al Nasr, K.; Ranjan, D.; Zubair, M.; He, J. "Ranking valid topologies of the
+secondary structure elements using a constraint graph", <span style =
+"font-style:italic">J. Bioinform. Comput. Biol.</span> 9(415), 2011.
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>

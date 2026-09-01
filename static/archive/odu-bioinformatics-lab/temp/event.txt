@@ -1,0 +1,13 @@
+<h3>Events/News</h3>
+<div style = "margin: 0px 5px 5px 10px; font-size: 14px;">
+<li>Undergraduate student Alice Poteat received ODU research scholarship of $2500 in the summer of 2016. Her work is to appear in journal Molecular Based Mathematical Biology. </li>
+<li>Undergraduate student Devin Haslam received ODU research scholarship of $1500 in the fall of 2016. His work was published in a paper at IEEE BIBM Conference in December 2016. </li>
+<li>Undergraduate student Stephanie Zeil is awarded $7500 from Virginia Space Grant Undergraduate Research Scholarship, April 2016. </li>
+<li>Undergraduate student Stephanie Zeil is a co-author of three publications and was given "Ourtstanding Undergraduate Researcher" award in spring of 2016. </li>
+<li>National Institute of Health award of $1.4 Millon to support "Multi-Resolution Docking Methods for Electron Microscopy", PI: Willy Wriggers, Co-investigator: Jing He, July 2015.</li>
+<li>Three PhD students graduated and took assistant professor positions. Kamal Al Nasr (2012), Dong Si (2015), and Lin Chen (2015) </li>
+<li>PhD student Dong Si published a paper in Structure, a journal with impact factor of 6.794, November 2014.</li>
+<li>National Scinece Foundation award of $589,703 to support "ABI Innovation: Advanced Informatics and Effective Algorithms to Enable CryoEM Protein Structure Prediction and Density Analysis", PI: Jing He, Co-PI: Desh Ranjan, M. Zubair, and Shuiwang Ji, July 2014 </li>
+<li>Andrew McNight, obtained B.S. and then M.S. at ODU, got the best paper award in Student Capstone Conference in Modeling, Simulation & Visualization, Suffolk VA, April 2013.</li>
+
+</div>

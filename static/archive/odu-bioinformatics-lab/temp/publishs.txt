@@ -1,0 +1,129 @@
+<h3>Publications</h3>
+
+<ol>
+<br>
+<br><li style = "line-height: 120%">  Salim Sazzed, JunHa Song, Julio Kovcas, Willy Wriggers, Manfred Auer, and Jing He "Tracing Actin Filaments in three-dimensional Electron Tomography Density Maps of Hair Cell Stereocilia" <span style = "font-style:italic;">Molecules </span>,23, 882, 2018.</li>
+<br><li style = "line-height: 120%"> Islam, T., Poteat, A., He, J.  "Quantification of Twist from the Central Lines of Beta-strands" <span style = "font-style:italic;"> Journal of Computational Biology</span>, 25 (1), 114-20, 2018.</li>
+<br><li style = "line-height: 120%">  Lin Chen, Jing He, Salim Sazzed, and Rayshawn Walker "An Investigation of Atomic Structures Derived using X-ray Crystallography and Cryo-Electron Microscopy using the Distal Block  " <span style = "font-style:italic;">Molecules </span>,23, 610, 2018.</li>
+<br><li style = "line-height: 120%">  Haslam, D., Zeng, T., Li, R., He, J. "Exploratory studies detecting secondary structures in medium resolution 3D Cryo-EM images using deep convolutional neural networks" <span style = "font-style:italic;"> Proceedings of the 9th ACM International Conference on Bioinformatics, computational Biology, and Health Informatics (ACM-BCB 18)</span>, 628-32, Washington, D.C., August 29-September 1, 2018.</li>
+<br><li style = "line-height: 120%">  Haslam, D., Sazzed, S.,  Wriggers, W., Kovcas, J., Song, J., Auer, M., He, J. "A Pattern Recognition Tool for Medium-Resolution Cryo-EM Density Maps and Low-Resolution Cryo-ET Density Maps " <span style = "font-style:italic;"> ” Lecture Notes in Computer Science book series (LNCS),International Symposium on Bioinformatics Research and Applications (ISBRA)</span>,volume 10847, pp 233-238, 2018.</li>
+<br><li style = "line-height: 120%">  Chen, L., He, J. "Using combined features to analyze atomic structures derived from Cryo-EM density maps" <span style = "font-style:italic;"> Proceedings of the 9th ACM International Conference on Bioinformatics, computational Biology, and Health Informatics (ACM-BCB 18)</span>, 651-55, Washington, D.C., August 29-September 1, 2018.</li>
+<br><li style = "line-height: 120%"> Si, D., He, J. "Modeling Beta-traces for Beta-barrels from Cryo-EM Density Maps", <span style = "font-style:italic;">BioMed Research International </span>, vol. 2017: 1793213, 2017.  </li>
+<br><li style = "line-height: 120%"> Islam, T., Poteat, A., and He, J. "Analysis of ß-strand Twist from the 3-dimensional Image of a Protein " <span style = "font-style:italic;"> Proceedings of the 8th ACM International Conference on Bioinformatics, computational Biology, and Health Informatics (ACM-BCB 17)</span>,650-54, Boston, August 20-23, 2017.</li>
+<br><li style = "line-height: 120%"> Zeil, S., Kovacs, J., Wriggers, W., He, J. "Comparing an Atomic Model or Structure to a Corresponding Cryo-electron Microscopy Image at the Central Axis of a Helix", <span style = "font-style:italic;">Journal of Computational Biology </span>, 24(1), 52-67, 2017.</li>
+<br><li style = "line-height: 120%">    Poteat, A., He, J. "Modeling Beta-sheets using Iterative Bezier Surface Fitting on Cryo-EM Density maps" <span style = "font-style:italic;">Molecular Based Mathematical Biology </span>, 5, 31-39, 2017.</li>
+<br><li style = "line-height: 120%">    Li., R., Si. D., Zeng, T., Ji, S., He, J. "Deep Convolutional Neural Networks for Protein Secondary Structure Detection in 3D Cryo-Electron Microscopy Images", <span style = "font-style:italic;">Proceedings of IEEE International Conference of Bioinformatics and Biomedicine (BIBM) </span>,41-46, December 15-18, Shenzhen, China 2016. </li>
+<br><li style = "line-height: 120%">    Haslam, D., Zubair, M., Ranjan, D., He, J. "Challenges in Matching Secondary Structures in Cryo-EM - an Exploration", <span style = "font-style:italic;">Proceedings of IEEE International Conference of Bioinformatics and Biomedicine (BIBM)</span>,  1719-24, December 15-18, Shenzhen, China 2016. </li>
+<br><li style = "line-height: 120%">    Biswas, A., Ranjan, D., Zubair, M., Zeil, S., Al Nasr, K., He, J. "An Effective Computational Method Incorporating Multiple Secondary Structure Predictions in Topology Determination for Cryo-EM Images", <span style = "font-style:italic;">IEEE Transaction of Comp. Biol. Bioinfo. </span>,  DOI 10.1109/TCBB.2016.2543721, 2016.</li>
+
+<br>
+<li style = "line-height: 120%">    Al Nasr, K., He, J. "Constrained Cyclic Coordinate Descent - Beyond the Protein Loop Closure Problem", <span style = "font-style:italic;">Robotica,</span> 34(8), 1777-90, 2016.</li>
+<br>
+<li style = "line-height: 120%">     Wriggers, W., He, J. "Numerical Geometry of Map and Model Assessment", <span style = "font-style:italic;">Journal of Structural Biology ,</span> (192),  255-261, 2015.</li>
+
+<br>
+<li style = "line-height: 120%">    Biswas, A., Ranjan, D., Zubair, M., He, J. "A dynamic programming algorithm for finding the optimal placement of a secondary structure topology in cryo-EM data", <span style = "font-style:italic;">Journal of Computational Biology,</span>  (9): 837-43, 2015.</li>
+
+<br>
+<li style = "line-height: 120%">    He, J., Zeil, S., Hallak, H., McKaig, K. Kovacs, J., Wriggers, W.  "Comparison of an Atomic Model and the Cryo-EM Image at the Central Axis of a Helix", <span style = "font-style:italic;">The Proceeding of the 2015 IEEE International Conference on Bioinformatics and Biomedicine Workshops,</span> Washinton D.C., November 9-12, 2015.</li>
+
+<br>
+<li style = "line-height: 120%">    He, J., Si, D., Arab, M.  "Detection of Secondary Structures from 3D Protein Images of Medium Resolutions and its Challenges", <span style = "font-style:italic;">The 8th International Conference on Image and Graphics(ICIG),  LNCS,</span>  9218, 1-10, 2015.</li>
+
+<br>
+<li style = "line-height: 120%">    Biswas, A., Ranjan, D., Zubair, M., He, J. "A novel computational method for deriving protein secondary structure topologies using cryo-EM density maps and multiple secondary structure predictions", <span style = "font-style:italic;">Bioinformatics Research and Applications, LNCS,</span>  9096, 60-71, 2015.</li>
+
+<br>
+<li style = "line-height: 120%">    Al Nasr, K., He, J. "Deriving protein backbone using traces extracted from density maps at medium resolutions", <span style = "font-style:italic;">Bioinformatics Research and Applications, LNCS,</span>  9096, 1-11, 2015.</li>
+
+<br>
+<li style = "line-height: 120%">    Si, D., He, J. "Tracing beta strands using StrandTwister from cryo-EM density maps at medium resolutions", <span style = "font-style:italic;">Structure, </span> 22(11):1665-76, 2014.</li>
+
+<br>
+<li style = "line-height: 120%">    Si, D., He, J. "Combining image processing and modeling to generate traces of beta-strands from cryo-EM density images of beta-barrels", <span style = "font-style:italic;"> Proceedings of Engineering in Medicine and Biology Society (EMBC), 36th Annual International Conference of the IEEE,  </span> 3941-4,  August 26-30, Chicago, IL, 2014.</li>
+
+<li style = "line-height: 120%">    Si, D., He, J. "Orientations of beta-strand traces and near maximum twist", <span style = "font-style:italic;"> Proceedings of the 5th ACM Conference on Bioinformatics, Computational Biology, and Health Informatics (ACM-BCB), </span> 690-4, September 20-23, Newport Beach, CA, 2014.</li>
+
+<br>
+<li style = "line-height: 120%">    Al Nasr, K., He, J. "Construction of protein backbone pieces using segment-based FBCCD and Cryo-EM skeleton", <span style = "font-style:italic;"> Proceedings of the 5th ACM Conference on Bioinformatics, Computational Biology, and Health Informatics (ACM-BCB), </span> 711-6, September 20-23, Newport Beach, CA, 2014.</li>
+
+<br>
+<li style = "line-height: 120%">    Al Nasr, K., Ranjan, D., Zubair, M., Chen, L., He, J. "Solving the secondary structure matching problem in de novo modeling using a constrained K-shortest path graph algorithm", <span style = "font-style:italic;">IEEE Transactions on Computational Biology and Bioinformatics </span> 11(2), 419-29, 2014.</li>
+
+<br>
+<li style = "line-height: 120%">    Chen, L., He, J. "A distance and orientation-dependent energy function of amino acid key blocks", <span style = "font-style:italic;">Biopolymers, </span> 101(6), 681-92, 2014.</li>
+
+<br>
+<li style = "line-height: 120%">    Al Nasr, K., Liu, C., Rwebangira, M., Burge, L., He, J. "Intensity-Based Skeletonization of CryoEM Grayscale Images Using a True Segmentation-Free Algorithm", <span style = "font-style:italic;">IEEE Transactions on Computational Biology and Bioinformatics,</span> 10(5):1289-98, 2013.</li>
+
+
+<br><li style = "line-height: 120%">    McKnight, A., Si, D., Al Nasr, K., Chernikov, A., Chrisochoides, N., He, J. "Estimating loop length from CryoEM images at medium resolutions", <span style = "font-style:italic;">BMC Structural Biology, 13 (suppl 1): S5</span>, 2013.</li>
+
+<br>
+<li style = "line-height: 120%">    Si, D., He, J. "Beta-sheet Detection and Representation from Medium Resolution Cryo-EM Density Maps", <span style = "font-style:italic;">Proceeding of ACM Conference on Bioinformatics Computational Biology and Biomedicine Workshops</span>, Washington, D.C., September 22-25, 2013.</li>
+
+<br>
+<li style = "line-height: 120%">    Al Nasr, K., Chen, L., Ranjan, D., Zubair, M., Si, D., He, J. "A Constrained K-shortest Path Algorithm to Rank the Topologies of the Protein Secondary Structure Elements Detected in CryoEM Volume Maps", <span style = "font-style:italic;">Proceeding of ACM Conference on Bioinformatics Computational Biology and Biomedicine Workshops, Washington, D.C., September 22-25,</span>, 2013.</li>
+
+<br>
+<li style = "line-height: 120%">    Si, D., Ji, S., Al Nasr, K., He, J. "A machine learning approach for the identification of protein secondary structure elements from electron cryo-microscopy density maps" <span style = "font-style:italic;">Biopolymers</span>, 97(9):698-708, 2012.</li>
+
+<br>
+<li style = "line-height: 120%">    Biswas, A., Si, D., Al Nasr, K., Ranjan, D., Zubair, M., He, J. "Improved efficiency in cryo-EM secondary structure topology determination from inaccurate data" <span style = "font-style:italic;">J. Bioinform Comput Biol</span>, 10(3): 1242006, 2012.</li>
+
+<br>
+<li style = "line-height: 120%">    Biswas, A., Si, D., Al Nasr, K., Ranjan, D., Zubair, M., He, J. "A constraint dynamic graph approach to identify the secondary structure topology from cryoEM density data in presence of errors" <span style = "font-style:italic;">The Proceeding of  the IEEE International Conference of Bioinformatics and Biomedicine</span>, p160-3, 2011, Nov 12-15, 2011.</li>
+<br>
+
+<li style = "line-height: 120%">    Al Nasr, K., Chen, L., Si, D., Ranjan, D., Zubair, M., He, J. "Building the Initial Chain of the Proteins through De Novo Modeling of the Cryo-Electron Microscopy Volume Data at the Medium Resolutions", <span style = "font-style:italic;">ACM Conference on Bioinformatics, Computational Biology and Biomedicine</span>, Orlando, FL, Oct 7-10, 2012.</li>
+
+<br>
+<li style = "line-height: 120%">    McKnight, A., Al Nasr, K., Si, D., Chernikov, A., Chrisochoides, N., He, J. "CryoEM Skeleton Length Estimation using a Decimated Curve", <span style = "font-style:italic;">2012 Workshop on Computational Structural Bioinormatics, Philadelphia, Oct 3-7, 2012.</span>.</li>
+
+
+<br>
+
+<li style = "line-height: 120%">    Chen, L., He, J. "A distance and orientation dependent potential energy function with cluster energy" <span style = "font-style:italic;">The Proceeding of the 2011 IEEE International Conference on Bioinformatics and Biomedicine Workshops</span>, p405-9, Nov 12-15, 2011.</li>
+<br>
+<li style = "line-height: 120%">    Al Nasr, K., Ranjan, D., Zubair, M., He, J. "Ranking valid topologies of the secondary structure elements using a constraint graph", <span style = "font-style:italic;">Journal of Bioinformatics and Computational Biology</span>, Vol 9(3), 415-30, 2011.</li>
+<br>
+<li style = "line-height: 120%">    Sun, W., He, J. "From isotropic to anisotropic side chain representations: comparison of three models for residue contact estimation", <span style = "font-style:italic;">PloS ONE 6(4)</span>:e19238. doi:10.1371, 2011.</li>
+<br>
+<li style = "line-height: 120%">    Al Nasr, K., Ranjan, D., He, J. "Enumeration of the geometrically constrained assignment of the secondary structures using the constraint graph" <span style = "font-style:italic;">Systems and Informatics World Network</span>, Vol 10, p68-76, 2010.</li>
+<br>
+<li style = "line-height: 120%">    Sun, W., He, J. "Understanding on the residue contact network using the log-normal cluster model and the multi-level wheel diagram", <span style = "font-style:italic;">Biopolymers</span>;93(10):904-16, 2010.</li>
+<br>
+<li style = "line-height: 120%">    Sun, W., He, J. "Native Secondary Structure Topology has Near Minimum Contact Energy among All Possible Geometrically Constrained Topologies", <span style = "font-style:italic;">Proteins: Structure, Function, and Bioinformatics</span>, Vol 77, (1): 159-73, 2009.</li>
+<br>
+<li style = "line-height: 120%">    Al Nasr, K, Sun, W., He, J. "Structure prediction for the helical skeletons detected from the low resolution protein density map" <span style = "font-style:italic;">BMC Bioinformatics</span>, Vol 11, suppl 1:s44, 2010.</li>
+<br>
+<li style = "line-height: 120%">    Al Nasr, K., He, J. "An Effective Convergence Independent Loop Closure Method using Forward-backward Cyclic Coordinate Descent",  <span style = "font-style:italic;">International Journal of Data Mining and Bioinformatics</span>,  Vol 3, (4), 2009.</li>
+<br>
+<li style = "line-height: 120%">    Sun, W., He., J. "Reduction of the Secondary Structure Topological Space through Direct Estimation of the Contact Energy Formed by the Secondary Structures" <span style = "font-style:italic;">BMC Bioinformatics</span>, Vol 10, suppl 1, s40, 2009</li>
+<br>
+<li style = "line-height: 120%">    Santini, J., Benson, B., He., J. "Characterization of Local Protein Structure Geometry from the Protein Data Bank - a Senior Project in Bioinformatics", <span style = "font-style:italic;">Proceeding of the Computing Alliance of Hispanic Serving Institutions Annual Meeting</span>, p49-51, Mountain View, CA, 2009.</li>
+<br>
+<li style = "line-height: 120%">    Lu, Y., He, J., Strauss, C. E. M. "Deriving Topology and Sequence Alignment for the Helix Skeleton in Low Resolution Protein Density Maps" <span style = "font-style:italic;">Journal of Bioinformatics and Computational Biology</span>, Vol 6 (1), p183-201, 2008.</li>
+<br>
+<li style = "line-height: 120%">    Lu, Y., Strauss, C. E. M., He, J. "Incorporation of Constraints from Low Resolution Density Map in Ab Initio Structure Prediction Using Rosetta", <span style = "font-style:italic;">Proceeding of 2007 IEEE international Conference on Bioinformatics and Biomedicine Workshops</span>, p67-73, San Jose, 2007.</li>
+<br>
+<li style = "line-height: 120%">    He, J., Al Nasr, K. "An Approximate Robotics Algorithm to Assemble a Loop between Two Helices",  <span style = "font-style:italic;">Proceeding of 2007 IEEE international Conference on Bioinformatics and Biomedicine Workshops</span>, p74-9, San Jose, 2007.</li>
+<br>
+<li style = "line-height: 120%">    Lu, Y, He, J., Strauss, CEM. "Deriving Protein Structure Topology from the Helix Skeleton in Low Resolution Density Map Using Rosetta" <span style = "font-style:italic;">Proceeding of Asia-Pacific Bioinformatics Conference 2007</span>, p143-52, Hong Kong, Jan. 2007.</li>
+<br>
+<li style = "line-height: 120%">    Dal Palu, A., Pontelli, E., He, J., Lu, Y. "A Constraint Logic Programming Approach to Associate 1D and 3D Structural Components for Large Protein Complexes" <span style = "font-style:italic;">Int. Journal of Data Mining and Bioinformatics</span>, Vol 1, (4), p352-71, 2007.</li>
+<br>
+<li style = "line-height: 120%">    Dal Palu, A., Pontelli, E., He, J., Lu, Y. "Identification of a-helices from Low Resolution Protein Density Map" <span style = "font-style:italic;">Proceedings of Computational Systems Bioinformatics (CSB) 2006</span>, p89-98, Stanford University, Aug. 2006.</li>
+<br>
+<li style = "line-height: 120%">    Pontell, E., Dal Palu, A., He, J., Lu, Y. "A Constraint Logic Programming Approach to 3D Structure Determination of Large Protein Complexes" <span style = "font-style:italic;">Proceedings of 2006 ACM Symposium on Applied Computing</span>, p131-6, Dijon, France, Apr. 2006.</li>
+<br>
+<li style = "line-height: 120%">    He, J., Lu, Y. "Using the Length Constraints of Helices to Evaluate Protein Secondary Structure Prediction for Helix" <span style = "font-style:italic;">Series in Mathematical Biology and Medicine, Vol 8 p363-72, Proceedings of International Conference on Bioinformatics and Its Applications</span>, Fort Lauderdale, Florida, 2004.</li>
+<br>
+<li style = "line-height: 120%">    He, J., Lu, Y., Pontelli, E. "A Parallel Algorithm for Helices Mapping between 3D and 1D Protein Structure using the Length Constraints of Helices" <span style = "font-style:italic;">Lecture Notes in Computer Science Vol 3358 p746-56, Proceedings of the Second International Symposium on Parallel and Distributed Processing and Applications</span>, Hong Kong, China, 2004.</li>
+<br>
+<li style = "line-height: 120%">    He, J., Schmid, M. F., Zhou, Z. H., Rixon, F., Chiu, W. "Finding and using local symmetry in identifying lower domain movements in hexon subunits of the herpes simplex virus type 1 B capsid", <span style = "font-style:italic;">Journal of Molecular Biology</span> 309(4), 903-14, 2001.</li>
+<br>
+<li style = "line-height: 120%">    Zhou, Z.H., Dougherty, M., Jakana, J., He, J., Rixon, F.J., Chiu, W."Seeing the herpes virus capsid at 8.5 A", <span style = "font-style:italic;">Science</span> 288, 877-80, 2000.</li>
+<br>
+<li style = "line-height: 120%">    Zhou, Z.H., He, J., Jakana, J., Tatman, J., Rixon, F., Chiu, W. "Assembly of VP26 in HSV-1 inferred from structures of wild-type and recombinant capsids", <span style = "font-style:italic;">Nature Structural Biology</span> 2(11), 1026-30, 1995.</li>
+</ol>

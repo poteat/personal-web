@@ -76,7 +76,7 @@ or category pages (useful for drafts you want to share, or unlisted content):
 ---
 title: "My Hidden Post"
 date: 2024-01-01
-_build:
+build:
   list: never
   render: always
   publishResources: true

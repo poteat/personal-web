@@ -1,0 +1,15 @@
+<h3>Reference</h3>
+Al Nasr, K., Chen, L., Si, D., Ranjan, D., Zubair, M., He, J. "Building the
+Initial Chain of the Proteins through De Novo Modeling of the Cryo-Electron
+Microscopy Volume Data at the Medium Resolutions", <span style =
+"font-style:italic;">ACM Conference on Bioinformatics, Computational Biology
+and Biomedicine</span>, Orlando, Oct 7-10, 2012.
+
+<br>
+<br>
+
+Al Nasr, K.; Sun, W.; He, J. "Structure prdiction for the helical skeletons detected from the low resolution protein density map", <span style = "font-style:italic;">BMC Bioinformatics</span>, 11(Suppl 1): S44, 2010.
+<br>
+<br>
+<br>
+<br>

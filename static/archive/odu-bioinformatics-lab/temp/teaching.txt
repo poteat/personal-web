@@ -1,0 +1,32 @@
+<h3>Current Course</h3>
+
+<div style = "margin: 5px 10px 20px 10px;">
+<ul>
+<li>CS381 Discrete Structures </a></li>
+<li>CS723/823 Introduction to Bioinformatics </a></li>
+</ul>
+</div>
+<h3>Courses Taught Previously</h3>
+
+<div style = "margin: 5px 10px 20px 10px;">
+<ul>
+<li>CS726/826 - Applications of Graph Concepts in Bioinformatics </li>
+<li>CS795/895 - Topics - Pattern Recognition in Molecular Images </li>
+<li>CS795/895 - Topics - Data Mining and Bioinformatics </li>
+<li>CS795/895 - Topics - Computational Structural Bioinformatics </li>
+
+<li>CS495/595 - Computations in Biomedical Sciences </li>
+
+<li>Bioinformatics - CS516 (NMSU), CS723/823 (ODU)</li>
+
+<li>Discrete Mathematics - CS278 (NMSU)</li>
+
+<li>Data Structure and Algorithms - CS272 (NMSU)</li>
+
+<li>Operating Systems - CS474 (NMSU)</li>
+
+<li>Senior Projects - CS448 (NMSU)</li>
+
+<li>C++ Programming - CS177/477 (NMSU)</li>
+</ul>
+</div>

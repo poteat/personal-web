@@ -1,0 +1,16 @@
+<h3>Reference</h3>
+
+Si, D., Ji, S., Al Nasr, K., He, J. "A Machine Learning Approach for the Identification of Protein Secondary Structure Elements from cryoEM Density Maps", <span style = "font-style:italic;">Biopolymers</span>, 97(9):698-708, 2012.
+<br>
+<br>
+Del Palu, A., Pontelli, E., He, J., Lu, Y. "Identification of a-helices from Low Resolution Protein Density Map" <span style = "font-style:italic;">Proceedings of Computational Systems Bioinformatics (CSB) 2006</span>, p89-98, Stanford University, Aug. 2006.
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>

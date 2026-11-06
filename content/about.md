@@ -7,6 +7,8 @@ menu:
 authorbox: true
 ---
 
+**update 2026:** low-key, they tell me I work at A\\ now.
+
 This is the blog of Alice Poteat. I'm a staff software engineer at [volley](https://volleythat.com/) - where I facilitate the dreams of our wonderful product team - and help unlock our shared vision for the future of "Netflix-style" interactive entertainment.
 
 Among my current professional responsibilities are:
